@@ -1,0 +1,28 @@
+﻿<Page x:Class="GestImmo.Views.SubViews.ajoutBienViews"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmo.Views.SubViews"
+      mc:Ignorable="d" 
+      d:DesignHeight="615" d:DesignWidth="540"
+      Title="ajoutBienViews">
+
+    <Grid>
+
+        <Frame x:Name="AjoutFrame"/>
+
+        <Frame x:Name="choixFrame" Margin="0,88,0,0"/>
+
+        <Label x:Name="labelAjouterBien" Content="Ajouter un bien :" HorizontalAlignment="Center" Height="31" Margin="0,10,0,0" VerticalAlignment="Top" Width="112" Background="White"/>
+        <Label x:Name="labelTypeBien" Content="Type de bien :" HorizontalAlignment="Left" Height="28" Margin="86,55,0,0" VerticalAlignment="Top" Width="84" Background="White" RenderTransformOrigin="0.212,0.596"/>
+        <ComboBox x:Name="inputType" Text="" Margin="199,55,103,532" RenderTransformOrigin="0.5,0.5" SelectionChanged="inputType_SelectionChanged">
+            <ComboBoxItem IsSelected="True">Box</ComboBoxItem>
+            <ComboBoxItem>Maison</ComboBoxItem>
+            <ComboBoxItem>Appartement</ComboBoxItem>
+        </ComboBox>
+
+        
+
+    </Grid>
+</Page>

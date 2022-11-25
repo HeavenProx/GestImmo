@@ -1,0 +1,58 @@
+﻿<Page x:Class="GestImmo.Views.Forms.GererAppartementForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmo.Views.Forms"
+      mc:Ignorable="d" 
+      d:DesignHeight="527" d:DesignWidth="540"
+      Title="GererMaisonForm">
+
+    <Grid>
+
+        <Frame x:Name="choixFrame"/>
+
+        <Label x:Name="labelNom" Content="Nom :" HorizontalAlignment="Left" Height="28" Margin="128,10,0,0" VerticalAlignment="Top" Width="42" Background="White" RenderTransformOrigin="0.212,0.596"/>
+        <TextBox x:Name="inputNom" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_2" Margin="199,8,103,490"/>
+
+        <Label x:Name="labelValeur" Content="Valeur :" HorizontalAlignment="Left" Height="27" Margin="120,43,0,0" VerticalAlignment="Top" Width="50" Background="White" RenderTransformOrigin="0.212,0.596"/>
+        <TextBox x:Name="inputValeur" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_3" Margin="199,42,103,457"/>
+
+        <Label x:Name="labelAdresse" Content="Adresse :" HorizontalAlignment="Left" Height="28" Margin="113,75,0,0" VerticalAlignment="Top" Width="58" Background="White" RenderTransformOrigin="0.212,0.596"/>
+        <TextBox x:Name="inputAdresse" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_4" Margin="199,75,103,424"/>
+
+        <Label x:Name="labelSurface" Content="Surface :" HorizontalAlignment="Left" Height="27" Margin="115,109,0,0" VerticalAlignment="Top" Width="56" Background="White" RenderTransformOrigin="0.232,0.222"/>
+        <TextBox x:Name="inputSurface" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_5" Margin="199,108,103,391"/>
+
+        <Label x:Name="labelNbPiece" Content="Nombre de pièces :" HorizontalAlignment="Left" Height="27" Margin="56,141,0,0" VerticalAlignment="Top" Width="114" Background="White" RenderTransformOrigin="0.232,0.222"/>
+        <TextBox x:Name="inputNbPiece" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_5" Margin="199,141,103,358"/>
+
+        <Label x:Name="labelNbChambre" Content="Nombre de chambres :" HorizontalAlignment="Left" Height="27" Margin="26,173,0,0" VerticalAlignment="Top" Width="144" Background="White" RenderTransformOrigin="0.232,0.222"/>
+        <TextBox x:Name="inputNbChambre" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_5" Margin="199,173,103,328"/>
+
+        <Label x:Name="labelCave" Content="Cave :" HorizontalAlignment="Left" Height="27" Margin="129,238,0,0" VerticalAlignment="Top" Width="42" Background="White" RenderTransformOrigin="0.232,0.222"/>
+        <TextBox x:Name="inputCave" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_5" Margin="199,237,103,263"/>
+
+        <Label x:Name="labelParking" Content="Parking :" HorizontalAlignment="Left" Height="27" Margin="113,205,0,0" VerticalAlignment="Top" Width="56" Background="White" RenderTransformOrigin="0.232,0.222"/>
+        <TextBox x:Name="inputParking" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_5" Margin="199,204,103,295"/>
+
+        <Label x:Name="labelEtage" Content="Etage :" HorizontalAlignment="Left" Height="27" Margin="128,271,0,0" VerticalAlignment="Top" Width="42" Background="White" RenderTransformOrigin="0.232,0.222"/>
+        <TextBox x:Name="inputEtage" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_5" Margin="199,270,103,229"/>
+
+        <Label x:Name="labelAscenceur" Content="Ascenceur :" HorizontalAlignment="Left" Height="27" Margin="106,308,0,0" VerticalAlignment="Top" Width="70" Background="White" RenderTransformOrigin="0.232,0.222"/>
+        <TextBox x:Name="inputAscenceur" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged_5" Margin="199,306,103,194"/>
+
+        <Label x:Name="labelChauffageCommun" Content="Chauffage Commun :" HorizontalAlignment="Left" Height="27" Margin="50,342,0,0" VerticalAlignment="Top" Width="126" Background="White" RenderTransformOrigin="0.232,0.222"/>
+
+        <Button x:Name="buttonValider" Content="Valider" Margin="173,395,270,103" Click="buttonValider_Click"/>
+        <ComboBox x:Name="verifChauff" Margin="199,342,103,157" SelectionChanged="verifChauff_SelectionChanged">
+            <ComboBoxItem Content="Oui"/>
+            <ComboBoxItem Content="Non"/>
+        </ComboBox>
+
+
+
+
+
+    </Grid>
+</Page>
