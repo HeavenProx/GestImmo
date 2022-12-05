@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-P:\2emeAnnee\POO\projet\GestImmo\GestImmo\GestImmo\obj\Debug\net6.0-windows\
+P:\2emeAnnee\POO\gestimmogit\GestImmo\obj\Debug\net6.0-windows\
 GestImmo
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-P:\2emeAnnee\POO\projet\GestImmo\GestImmo\GestImmo\App.xaml
+P:\2emeAnnee\POO\gestimmogit\GestImmo\App.xaml
 11-1448423068
 
 50-1360193325
-2081038102851
+208137662577
 HomeView.xaml;MainWindow.xaml;NavigationView.xaml;PrestataireView.xaml;PretView.xaml;Views\BienView.xaml;Views\Forms\GererAppartementForm.xaml;Views\Forms\GererBienForm.xaml;Views\Forms\GererMaisonForm.xaml;Views\SubViews\ajoutBienViews.xaml;Views\SubViews\ListBienViews.xaml;
 
-False
+True
 

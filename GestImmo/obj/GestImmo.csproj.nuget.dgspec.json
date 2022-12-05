@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\2emeAnnee\\POO\\projet\\GestImmo\\GestImmo\\GestImmo\\GestImmo.csproj": {}
+    "P:\\2emeAnnee\\POO\\gestimmogit\\GestImmo\\GestImmo.csproj": {}
   },
   "projects": {
-    "P:\\2emeAnnee\\POO\\projet\\GestImmo\\GestImmo\\GestImmo\\GestImmo.csproj": {
+    "P:\\2emeAnnee\\POO\\gestimmogit\\GestImmo\\GestImmo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\2emeAnnee\\POO\\projet\\GestImmo\\GestImmo\\GestImmo\\GestImmo.csproj",
+        "projectUniqueName": "P:\\2emeAnnee\\POO\\gestimmogit\\GestImmo\\GestImmo.csproj",
         "projectName": "GestImmo",
-        "projectPath": "P:\\2emeAnnee\\POO\\projet\\GestImmo\\GestImmo\\GestImmo\\GestImmo.csproj",
+        "projectPath": "P:\\2emeAnnee\\POO\\gestimmogit\\GestImmo\\GestImmo.csproj",
         "packagesPath": "C:\\Users\\h.duperthuy\\.nuget\\packages\\",
-        "outputPath": "P:\\2emeAnnee\\POO\\projet\\GestImmo\\GestImmo\\GestImmo\\obj\\",
+        "outputPath": "P:\\2emeAnnee\\POO\\gestimmogit\\GestImmo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\h.duperthuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,7 +76,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
