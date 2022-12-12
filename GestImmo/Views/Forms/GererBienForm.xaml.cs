@@ -1,5 +1,7 @@
 ﻿using GestImmo.DAL;
 using GestImmo.Models;
+using GestImmo.Views.Interface;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,35 +22,19 @@ namespace GestImmo
     /// <summary>
     /// Logique d'interaction pour GereBienForm.xaml
     /// </summary>
-    public partial class GereBienForm : Page
+    public partial class GereBienForm : Page, IObservable
     {
+        public List<IObserver> Observers { get; set; }
         public GereBienForm()
         {
             InitializeComponent();
+            this.Observers = new List<IObserver>();
         }
 
-        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
+
+        private void btnAjouter_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void TextBox_TextChanged_3(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_4(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_5(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void buttonValider_Click(object sender, RoutedEventArgs e)
-        {
+            Log.Logger.Verbose("Entrer dans la fonction de création de box");
             string nom = this.inputNom.Text;
             int valeur = int.Parse(this.inputValeur.Text);
             string adresse = this.inputAdresse.Text;
@@ -58,6 +44,22 @@ namespace GestImmo
             GestImmoContext ctx = GestImmoContext.getInstance();
             ctx.Bien.Add(box);
             ctx.SaveChanges();
+
+            this.notifyObservers();
+
+            Log.Logger.Information("Le box " + nom + " a été créé !");
         }
+
+
+
+        public void notifyObservers()
+        {
+
+            foreach (IObserver obs in this.Observers)
+            {
+                obs.update();
+            }
+        }
+
     }
 }
