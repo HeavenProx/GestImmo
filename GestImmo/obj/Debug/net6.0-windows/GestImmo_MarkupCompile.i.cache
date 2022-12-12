@@ -1,7 +1,7 @@
 ﻿GestImmo
 1.0.0.0
 
-winexe
+exe
 C#
 .cs
 P:\2emeAnnee\POO\gestimmogit\GestImmo\obj\Debug\net6.0-windows\
@@ -12,8 +12,8 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 P:\2emeAnnee\POO\gestimmogit\GestImmo\App.xaml
 11-1448423068
 
-52-1739513364
-208137662577
+361496938906
+211-768732383
 HomeView.xaml;MainWindow.xaml;NavigationView.xaml;PrestataireView.xaml;PretView.xaml;Views\BienView.xaml;Views\Forms\GererAppartementForm.xaml;Views\Forms\GererBienForm.xaml;Views\Forms\GererMaisonForm.xaml;Views\SubViews\ajoutBienViews.xaml;Views\SubViews\ListBienViews.xaml;
 
 False

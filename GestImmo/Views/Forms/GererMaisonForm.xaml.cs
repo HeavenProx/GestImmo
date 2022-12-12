@@ -15,23 +15,27 @@ using System.Windows.Shapes;
 using GestImmo.DAL;
 using GestImmo.Models;
 using GestImmo.Views;
+using GestImmo.Views.Interface;
 using GestImmo.Views.SubViews;
+using Serilog;
 
 namespace GestImmo.Views.Forms
 {
     /// <summary>
     /// Logique d'interaction pour GererMaisonForm.xaml
     /// </summary>
-    public partial class GererMaisonForm : Page
+    public partial class GererMaisonForm : Page, IObservable
     {
+        public List<IObserver> Observers { get; set; }
         public GererMaisonForm()
         {
             InitializeComponent();
+            this.Observers = new List<IObserver>();
         }
 
-        private void buttonValider_Click(object sender, RoutedEventArgs e)
+        private void btnAjouter_Click(object sender, RoutedEventArgs e)
         {
-
+            Log.Logger.Verbose("Entrer dans la fonction de création de maison");
             string nom = this.inputNom.Text;
             int valeur = int.Parse(this.inputValeur.Text);
             string adresse = this.inputAdresse.Text;
@@ -46,31 +50,19 @@ namespace GestImmo.Views.Forms
             GestImmoContext ctx = GestImmoContext.getInstance();
             ctx.Bien.Add(maison);
             ctx.SaveChanges();
+
+            this.notifyObservers();
+
+            Log.Logger.Information("La maison " + nom + " a été créé !");
         }
 
-        private void inputType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        public void notifyObservers()
         {
 
-        }
-
-        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_3(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_4(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_5(object sender, TextChangedEventArgs e)
-        {
-
+            foreach (IObserver obs in this.Observers)
+            {
+                obs.update();
+            }
         }
     }
 }

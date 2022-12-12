@@ -1,5 +1,6 @@
 ﻿using GestImmo.DAL;
 using GestImmo.Models;
+using GestImmo.Views.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace GestImmo
     /// <summary>
     /// Logique d'interaction pour ListBienViews.xaml
     /// </summary>
-    public partial class ListBienViews : Page
+    public partial class ListBienViews : Page, IObserver
     {
         public ListBienViews()
         {
@@ -32,11 +33,6 @@ namespace GestImmo
                 this.tableauBien.Items.Add(bien.Nom);
             }
 
-        }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            
         }
 
         private void refreshList()

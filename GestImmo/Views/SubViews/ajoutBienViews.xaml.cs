@@ -1,6 +1,7 @@
 ﻿using GestImmo.DAL;
 using GestImmo.Models;
 using GestImmo.Views.Forms;
+using GestImmo.Views.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,9 +24,11 @@ namespace GestImmo.Views.SubViews
     /// </summary>
     public partial class ajoutBienViews : Page
     {
+        private IObserver obs;
 
-        public ajoutBienViews()
+        public ajoutBienViews(IObserver observer)
         {
+            this.obs = observer;
             InitializeComponent();
         }
 
@@ -33,33 +36,23 @@ namespace GestImmo.Views.SubViews
         {
             if(inputType.SelectedIndex == 0)
             {
-                this.choixFrame.Navigate(new GereBienForm());
+                GereBienForm gereBienForm = new GereBienForm();
+                gereBienForm.Observers.Add(this.obs);
+                this.choixFrame.Navigate(gereBienForm);
             }
             else if (inputType.SelectedIndex == 1)
             {
-                this.choixFrame.Navigate(new GererMaisonForm());
+                GererMaisonForm gererMaisonForm = new GererMaisonForm();
+                gererMaisonForm.Observers.Add(this.obs);
+                this.choixFrame.Navigate(gererMaisonForm);
             }
             else if (inputType.SelectedIndex == 2)
             {
-                this.choixFrame.Navigate(new GererAppartementForm());
+                GererAppartementForm gererAppartementForm = new GererAppartementForm();
+                gererAppartementForm.Observers.Add(this.obs);
+                this.choixFrame.Navigate(gererAppartementForm);
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         public interface IObservable
@@ -74,7 +67,6 @@ namespace GestImmo.Views.SubViews
          //      }
          //   }
         }
-
 
         void notifyObservers()
         {

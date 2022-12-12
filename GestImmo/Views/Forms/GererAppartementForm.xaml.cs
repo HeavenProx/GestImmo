@@ -15,38 +15,22 @@ using System.Windows.Shapes;
 using GestImmo.DAL;
 using GestImmo.Models;
 using GestImmo.Views;
+using GestImmo.Views.Interface;
 using GestImmo.Views.SubViews;
+using Serilog;
 
 namespace GestImmo.Views.Forms
 {
     /// <summary>
     /// Logique d'interaction pour GererAppartementForm.xaml
     /// </summary>
-    public partial class GererAppartementForm : Page
+    public partial class GererAppartementForm : Page, IObservable
     {
+        public List<IObserver> Observers { get; set; }
         public GererAppartementForm()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_3(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_4(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_5(object sender, TextChangedEventArgs e)
-        {
-
+            this.Observers = new List<IObserver>();
         }
 
         private void verifChauff_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -54,8 +38,10 @@ namespace GestImmo.Views.Forms
 
         }
 
-        private void buttonValider_Click(object sender, RoutedEventArgs e)
+
+        private void btnAjouter_Click(object sender, RoutedEventArgs e)
         {
+            Log.Logger.Verbose("Entrer dans la fonction de création d'appartement");
             string nom = this.inputNom.Text;
             int valeur = int.Parse(this.inputValeur.Text);
             string adresse = this.inputAdresse.Text;
@@ -80,6 +66,19 @@ namespace GestImmo.Views.Forms
             GestImmoContext ctx = GestImmoContext.getInstance();
             ctx.Bien.Add(appartement);
             ctx.SaveChanges();
+
+            this.notifyObservers();
+
+            Log.Logger.Information("L'appartement " + nom + " a été créé !");
+        }
+
+        public void notifyObservers()
+        {
+
+            foreach (IObserver obs in this.Observers)
+            {
+                obs.update();
+            }
         }
     }
 }

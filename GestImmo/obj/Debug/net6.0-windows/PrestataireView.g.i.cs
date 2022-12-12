@@ -61,7 +61,7 @@ namespace GestImmo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/prestataireview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;component/prestataireview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PrestataireView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

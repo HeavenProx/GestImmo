@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using GestImmo.Data.Models;
 using GestImmo.Models;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace GestImmo.DAL
 {
@@ -15,7 +16,7 @@ namespace GestImmo.DAL
         public DbSet<Intervention>? Interventions { get; set; }
         public DbSet<Prestataire>? Prestataires { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Host=localhost;Database=GestImmo;Username=postgres;Password=Hugoemma1103");
+        => optionsBuilder.UseNpgsql("Host=localhost;Database=GestImmo;Username=postgres;Password=root");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,6 +35,7 @@ namespace GestImmo.DAL
             {
                 instance = new GestImmoContext();
             }
+            Log.Logger.Debug("Connection éffectué à la base de données");
             return instance;
         }
 

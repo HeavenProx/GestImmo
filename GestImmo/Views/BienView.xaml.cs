@@ -28,37 +28,12 @@ namespace GestImmo.Views
         GestImmoContext ctx = GestImmoContext.getInstance();
         public BienView()
         {
+            ListBienViews listBienViews = new ListBienViews();
             InitializeComponent();
-            this.ListFrame.Navigate(new ListBienViews());
-            this.AjoutFrame.Navigate(new ajoutBienViews());
-
-
+            this.ListFrame.Navigate(listBienViews);
+            this.AjoutFrame.Navigate(new ajoutBienViews(listBienViews));
         }
 
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_3(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_4(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_5(object sender, TextChangedEventArgs e)
-        {
-
-        }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
