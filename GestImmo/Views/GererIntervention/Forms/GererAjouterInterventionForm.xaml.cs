@@ -26,5 +26,12 @@ namespace GestImmo.Views.GererIntervention.Forms
             InitializeComponent();
             this.Frame_Ajouter_Intervention.Navigate(new GererInterventionForm());
         }
+
+        private IObserver obs;
+        public GererAjouterInterventionForm(IObserver obs)
+        {
+            InitializeComponent();
+            this.obs = obs;
+        }
     }
 }

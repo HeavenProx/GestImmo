@@ -24,7 +24,6 @@ namespace GestImmo.Views.GererIntervention.SubViews
     {
         ImmoContext ctx = ImmoContext.getInstance();
 
-
         public ListInterventionView()
         {
             InitializeComponent();
@@ -38,9 +37,9 @@ namespace GestImmo.Views.GererIntervention.SubViews
 
             this.ListInterventionView_Section.Items.Clear();
 
-            foreach (Bien bien in ctx.Bien)
+            foreach (Intervention intervention in ctx.Intervention)
             {
-                this.ListInterventionView_Section.Items.Add(bien.NomBien);
+                this.ListInterventionView_Section.Items.Add(intervention.DateIntervention);
             }
         }
 

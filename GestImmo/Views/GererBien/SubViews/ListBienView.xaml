@@ -11,7 +11,9 @@
     <ListView x:Name="ListBienView_Section" d:ItemsSource="{d:SampleData ItemCount=5}">
         <ListView.View>
             <GridView>
-                <GridViewColumn/>
+                <GridViewColumn x:Name="NomBien">Nom</GridViewColumn>
+                <GridViewColumn x:Name="Valeur">Valeur</GridViewColumn>
+                <GridViewColumn x:Name="Surface">Surface</GridViewColumn>
             </GridView>
         </ListView.View>
     </ListView>

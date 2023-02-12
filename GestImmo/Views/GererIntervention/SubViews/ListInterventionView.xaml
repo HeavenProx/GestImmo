@@ -11,7 +11,9 @@
     <ListView x:Name="ListInterventionView_Section" d:ItemsSource="{d:SampleData ItemCount=5}">
         <ListView.View>
             <GridView>
-                <GridViewColumn/>
+                <GridViewColumn>Bien</GridViewColumn>
+                <GridViewColumn>Prestataire</GridViewColumn>
+                <GridViewColumn>Date</GridViewColumn>
             </GridView>
         </ListView.View>
     </ListView>

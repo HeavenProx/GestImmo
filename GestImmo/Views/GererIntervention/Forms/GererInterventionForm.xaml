@@ -24,9 +24,6 @@
         </Grid.RowDefinitions>
 
         <ComboBox x:Name="BienIntervention_ComboBox" HorizontalAlignment="Center" VerticalAlignment="Center" Height="26" Width="250" SelectionChanged="TypeBien_ComboBox_SelectionChanged" Grid.Column="1">
-            <ComboBoxItem>Appartement</ComboBoxItem>
-            <ComboBoxItem>Maison</ComboBoxItem>
-            <ComboBoxItem>Box</ComboBoxItem>
         </ComboBox>
         <ComboBox x:Name="PrestataireIntervention_ComboBox" HorizontalAlignment="Center" VerticalAlignment="Center" Height="26" Width="250" SelectionChanged="TypeBien_ComboBox_SelectionChanged" Grid.Column="1" Grid.Row="1">
             <ComboBoxItem>Appartement</ComboBoxItem>
@@ -38,7 +35,7 @@
         <TextBox x:Name="InformationIntervention_TextBox" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextChanged="InformationIntervention_TextBox_TextChanged"/>
 
         <Label x:Name="Lbl_BienIntervention" Grid.Row="0" Grid.Column="0" Content="Bien" VerticalAlignment="Center"/>
-        <Label x:Name="Lbl_PrestataireIntervention" Grid.Row="1" Grid.Column="0" Content="Prestatire" VerticalAlignment="Center"/>
+        <Label x:Name="Lbl_PrestataireIntervention" Grid.Row="1" Grid.Column="0" Content="Prestataire" VerticalAlignment="Center"/>
         <Label x:Name="Lbl_DateIntervention" Grid.Row="2" Grid.Column="0" Content="Date" VerticalAlignment="Center"/>
         <Label x:Name="Lbl_MontantTTCIntervention" Grid.Row="3" Grid.Column="0" Content="Montant TTC" VerticalAlignment="Center"/>
         <Label x:Name="Lbl_InformationIntervention" Grid.Row="4" Grid.Column="0" Content="Information" VerticalAlignment="Center"/>
