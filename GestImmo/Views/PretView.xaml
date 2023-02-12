@@ -9,7 +9,7 @@
       Title="PretView">
 
     <Grid>
-        <Label x:Name="Lbl_Pret" Content="Page des prets" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+        <Frame x:Name="Frame_Consulter_Pret" Content="Frame" Margin="0,0,400,0" />
+        <Frame x:Name="Ajouter_Pret" Content="Frame" Margin="400,0,0,0" />
     </Grid>
 </Page>

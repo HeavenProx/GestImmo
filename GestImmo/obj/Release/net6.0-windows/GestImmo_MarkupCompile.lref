@@ -1,18 +1,21 @@
 ﻿
 
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\MainWindow.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\BienView.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\GererBien\Forms\GererAppartementForm.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\GererBien\Forms\GererBienForm.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\GererBien\Forms\GererBoxForm.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\GererBien\Forms\GererMaisonForm.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\GererBien\SubViews\ListBienView.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\GererIntervention\Forms\GererInterventionForm.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\GererIntervention\SubViews\ListInterventionView.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\HomeView.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\InterventionView.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\NavigationView.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\PrestataireView.xaml;;
-FC:\Users\Hugo7\OneDrive\Bureau\test\GestImmo\Views\PretView.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\MainWindow.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\BienView.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererBien\Forms\GererAppartementForm.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererBien\Forms\GererBienForm.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererBien\Forms\GererBoxForm.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererBien\Forms\GererMaisonForm.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererBien\SubViews\ListBienView.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererIntervention\Forms\GererInterventionForm.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererIntervention\SubViews\ListInterventionView.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\HomeView.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\InterventionView.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\NavigationView.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\PrestataireView.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\PretView.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererPret\Forms\GererAjouterPretForm.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererPret\Forms\GererPretForm.xaml;;
+FC:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\Views\GererPret\Subviews\ListPretView.xaml;;
 

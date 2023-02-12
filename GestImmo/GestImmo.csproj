@@ -21,8 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Views\GererPret\Forms\" />
-    <Folder Include="Views\GererPret\SubViews\" />
   </ItemGroup>
 
 </Project>

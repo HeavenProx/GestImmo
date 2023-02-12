@@ -61,7 +61,7 @@ namespace GestImmo.Views.GererIntervention.Forms
 
             if (DateIntervention_TextBox.Text != "" && MontantTTCIntervention_TextBox.Text != "" && InformationIntervention_TextBox.Text != "")
             {
-                string nomBien = BienIntervention_ComboBox.Items.ToString();
+                //string nomBien = BienIntervention_ComboBox.Items.ToString();
                 string date = DateIntervention_TextBox.Text;
                 int montantttc = int.Parse(MontantTTCIntervention_TextBox.Text);
                 string information = InformationIntervention_TextBox.Text;

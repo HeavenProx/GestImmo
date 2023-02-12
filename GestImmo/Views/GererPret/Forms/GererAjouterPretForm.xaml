@@ -1,0 +1,17 @@
+﻿<Page x:Class="GestImmo.Views.GererPret.Forms.GererAjouterPretForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmo.Views.GererPret.Forms"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="GererAjouterPretForm">
+
+    <Grid>
+        <Label Content="Ajouter un prêt" HorizontalAlignment="Center" VerticalAlignment="Top" Height="25" Width="154"/>
+
+        <Frame x:Name="Frame_Ajouter_Pret" Content="" Margin="0,38,0,0"/>
+
+    </Grid>
+</Page>

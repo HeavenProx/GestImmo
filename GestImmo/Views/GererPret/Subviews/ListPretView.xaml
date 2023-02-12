@@ -1,0 +1,22 @@
+﻿<Page x:Class="GestImmo.Views.GererPret.Subviews.ListPretView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmo.Views.GererPret.Subviews"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="ListPretView" >
+
+    <ListView x:Name="ListPretView_Section" d:ItemsSource="{d:SampleData ItemCount=5}">
+        <ListView.View>
+            <GridView>
+                <GridViewColumn>Bien</GridViewColumn>
+                <GridViewColumn>Mensualité</GridViewColumn>
+                <GridViewColumn>Montant</GridViewColumn>
+            </GridView>
+        </ListView.View>
+    </ListView>
+
+</Page>
+
