@@ -31,6 +31,15 @@
     <Compile Update="Views\GererIntervention\SubViews\ListInterventionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GererPrestataire\Forms\GererPrestataireForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GererPrestataire\SubViews\ListPrestataireView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\GererPret\Forms\GererAjouterPretForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -85,6 +94,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\GererIntervention\SubViews\ListInterventionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GererPrestataire\Forms\GererPrestataireForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GererPrestataire\SubViews\ListPrestataireView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\GererPret\Forms\GererAjouterPretForm.xaml">

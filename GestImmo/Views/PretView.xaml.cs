@@ -29,7 +29,6 @@ namespace GestImmo.Views
             this.Frame_Consulter_Pret.Navigate(listPretView);
             this.Ajouter_Pret.Navigate(new GererAjouterPretForm(listPretView));
         }
-
         private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
             this.Frame_Consulter_Pret.Navigate(new ListPretView());

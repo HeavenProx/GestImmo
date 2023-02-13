@@ -43,6 +43,6 @@
         <Label x:Name="Lbl_Cave" Content="Cave"  Grid.Row="6" Grid.Column="0" VerticalAlignment="Center"/>
         <Label x:Name="Lbl_Parking" Content="Place de parking"  Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"/>
 
-        <Button x:Name="Bouton_Ajouter_Bien" Content="Button" Grid.Row="8" Grid.Column="1" VerticalAlignment="Center" Click="Bouton_Ajouter_Bien_Click"/>
+        <Button x:Name="Bouton_Ajouter_Bien" Content="Ajouter une maison" Grid.Row="8" Grid.Column="1" VerticalAlignment="Center" Click="Bouton_Ajouter_Bien_Click"/>
     </Grid>
 </Page>

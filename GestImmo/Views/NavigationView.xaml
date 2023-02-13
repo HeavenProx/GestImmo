@@ -20,5 +20,6 @@
         <Button Grid.Column="1" Content="Biens" HorizontalAlignment="Left" Margin="46,10,0,0" VerticalAlignment="Top" Click="Button_Click" Width="76"/>
         <Button Grid.Column="1" Content="Prets" HorizontalAlignment="Left" Margin="147,10,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="76"/>
         <Button Grid.Column="1" Content="Interventions" HorizontalAlignment="Left" Margin="244,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,-0.346" Click="Button_Click_2" Width="76"/>
+        <Button Grid.Column="2" Content="Prestataires" HorizontalAlignment="Left" Margin="296,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,-0.346" Click="Button_Click_3" Width="76"/>
     </Grid>
 </Page>

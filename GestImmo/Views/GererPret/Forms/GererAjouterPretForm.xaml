@@ -9,7 +9,7 @@
       Title="GererAjouterPretForm">
 
     <Grid>
-        <Label Content="Ajouter un prêt" HorizontalAlignment="Center" VerticalAlignment="Top" Height="25" Width="154"/>
+        <Label Content="Ajouter un prêt" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Height="28" Width="92"/>
 
         <Frame x:Name="Frame_Ajouter_Pret" Content="" Margin="0,38,0,0"/>
 

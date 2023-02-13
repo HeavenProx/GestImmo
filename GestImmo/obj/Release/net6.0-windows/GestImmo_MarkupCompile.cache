@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\obj\Release\net6.0-windows\
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Release\net6.0-windows\
 GestImmo
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-C:\Users\Hugo7\OneDrive\Bureau\Nouveau\GestImmo\GestImmo\App.xaml
-18-1749334697
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\App.xaml
+21164588854
 
-37-1535594660
+40506590122
 208-1716459877
-MainWindow.xaml;Views\BienView.xaml;Views\GererBien\Forms\GererAppartementForm.xaml;Views\GererBien\Forms\GererBienForm.xaml;Views\GererBien\Forms\GererBoxForm.xaml;Views\GererBien\Forms\GererMaisonForm.xaml;Views\GererBien\SubViews\ListBienView.xaml;Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml;Views\GererIntervention\Forms\GererInterventionForm.xaml;Views\GererIntervention\SubViews\ListInterventionView.xaml;Views\GererPret\Forms\GererAjouterPretForm.xaml;Views\GererPret\Forms\GererPretForm.xaml;Views\GererPret\Subviews\ListPretView.xaml;Views\HomeView.xaml;Views\InterventionView.xaml;Views\NavigationView.xaml;Views\PrestataireView.xaml;Views\PretView.xaml;
+MainWindow.xaml;Views\BienView.xaml;Views\GererBien\Forms\GererAppartementForm.xaml;Views\GererBien\Forms\GererBienForm.xaml;Views\GererBien\Forms\GererBoxForm.xaml;Views\GererBien\Forms\GererMaisonForm.xaml;Views\GererBien\SubViews\ListBienView.xaml;Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml;Views\GererIntervention\Forms\GererInterventionForm.xaml;Views\GererIntervention\SubViews\ListInterventionView.xaml;Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml;Views\GererPrestataire\Forms\GererPrestataireForm.xaml;Views\GererPrestataire\SubViews\ListPrestataireView.xaml;Views\GererPret\Forms\GererAjouterPretForm.xaml;Views\GererPret\Forms\GererPretForm.xaml;Views\GererPret\Subviews\ListPretView.xaml;Views\HomeView.xaml;Views\InterventionView.xaml;Views\NavigationView.xaml;Views\PrestataireView.xaml;Views\PretView.xaml;
 
 True
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestImmo.Views.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,11 +24,10 @@ namespace GestImmo.Views.GererPret.Forms
         public GererAjouterPretForm()
         {
             InitializeComponent();
-
             this.Frame_Ajouter_Pret.Navigate(new GererPretForm());
         }
 
-        private IObserver obs;
+        private IObserver? obs;
         public GererAjouterPretForm(IObserver obs)
         {
             InitializeComponent();

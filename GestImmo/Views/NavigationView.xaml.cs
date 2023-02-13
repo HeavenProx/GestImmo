@@ -42,5 +42,10 @@ namespace GestImmo.Views
         {
             this.MainFrame.Navigate(new InterventionView());
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            this.MainFrame.Navigate(new PrestataireView());
+        }
     }
 }

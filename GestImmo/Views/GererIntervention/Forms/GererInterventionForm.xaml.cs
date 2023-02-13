@@ -34,11 +34,15 @@ namespace GestImmo.Views.GererIntervention.Forms
             {
                 BienIntervention_ComboBox.Items.Add(bien.NomBien + " - id : " + bien.BienId);
             }
+            foreach (Prestataire prestataire in ctx.Prestataire)
+            {
+                PrestataireIntervention_ComboBox.Items.Add(prestataire.Nom + " - " + prestataire.Prenom);
+            }
         }
 
         private void TypeBien_ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-             
+
         }
 
         private void DateIntervention_TextBox_TextChanged(object sender, TextChangedEventArgs e)

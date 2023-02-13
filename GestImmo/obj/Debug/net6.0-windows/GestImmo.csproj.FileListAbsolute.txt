@@ -483,3 +483,9 @@ C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPre
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPret\Forms\GererAjouterPretForm.baml
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPret\Forms\GererPretForm.baml
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPret\Subviews\ListPretView.baml
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\Forms\GererAjouterPrestataireForm.g.cs
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\Forms\GererPrestataireForm.g.cs
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\SubViews\ListPrestataireView.g.cs
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\Forms\GererAjouterPrestataireForm.baml
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\Forms\GererPrestataireForm.baml
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\SubViews\ListPrestataireView.baml

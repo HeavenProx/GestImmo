@@ -8,7 +8,7 @@
       d:DesignHeight="370" d:DesignWidth="400"
       Title="GererPretForm">
 
-    <Grid Margin="15,10,15,15">
+    <Grid Margin="15,0,15,10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -21,7 +21,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <ComboBox x:Name="BienPret_ComboBox" HorizontalAlignment="Center" VerticalAlignment="Center" Height="26" Width="250" SelectionChanged="TypeBien_ComboBox_SelectionChanged" Grid.Column="1">
+        <ComboBox x:Name="BienPret_ComboBox" HorizontalAlignment="Center" VerticalAlignment="Center" Height="26" Width="250" SelectionChanged="BienPret_ComboBox_SelectionChanged" Grid.Column="1">
         </ComboBox>
         <TextBox x:Name="ApportPret_TextBox" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextChanged="ApportPret_TextBox_TextChanged"/>
         <TextBox x:Name="MensualitePret_TextBox" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextChanged="MensualitePret_TextBox_TextChanged"/>

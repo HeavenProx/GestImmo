@@ -1,4 +1,8 @@
-﻿using System;
+﻿using GestImmo.Views.GererIntervention.Forms;
+using GestImmo.Views.GererIntervention.SubViews;
+using GestImmo.Views.GererPrestataire.Forms;
+using GestImmo.Views.GererPrestataire.SubViews;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +27,14 @@ namespace GestImmo.Views
         public PrestataireView()
         {
             InitializeComponent();
+            ListPrestataireView listPrestataireView = new ListPrestataireView();
+            this.Frame_Consulter_Prestataire.Navigate(listPrestataireView);
+            this.Ajouter_Prestataire.Navigate(new GererAjouterPrestataireForm());
+        }
+
+        private void Frame_Navigated(object sender, NavigationEventArgs e)
+        {
+            this.Frame_Consulter_Prestataire.Navigate(new ListPrestataireView());
         }
     }
 }

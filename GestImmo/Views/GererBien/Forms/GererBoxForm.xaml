@@ -29,6 +29,6 @@
         <Label x:Name="Lbl_ValeurBien" Grid.Row="1" Grid.Column="0" Content="Valeur" VerticalAlignment="Center"/>
         <Label x:Name="Lbl_AdresseBien" Grid.Row="2" Grid.Column="0" Content="Adresse" VerticalAlignment="Center"/>
         <Label x:Name="Lbl_SurfaceBien" Grid.Row="3" Grid.Column="0" Content="Surface(m2)" VerticalAlignment="Center"/>
-        <Button x:Name="Bouton_Ajouter_Bien" Grid.Row="4" Grid.Column="1" Content="Ajouter" VerticalAlignment="Center" Height="22" Width="182" Click="Bouton_Ajouter_Bien_Click"/>
+        <Button x:Name="Bouton_Ajouter_Bien" Grid.Row="4" Grid.Column="1" Content="Ajouter une box" VerticalAlignment="Center" Height="22" Width="182" Click="Bouton_Ajouter_Bien_Click"/>
     </Grid>
 </Page>

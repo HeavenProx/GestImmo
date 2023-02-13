@@ -22,7 +22,6 @@ namespace GestImmo.Views.GererPret.Forms
     /// </summary>
     public partial class GererPretForm : Page, IObservable
     {
-
         public List<IObserver> Observers { get; set; }
 
         public GererPretForm()
@@ -37,11 +36,10 @@ namespace GestImmo.Views.GererPret.Forms
             }
         }
 
-        private void TypeBien_ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void BienPret_ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
-
         private void ApportPret_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
@@ -77,11 +75,11 @@ namespace GestImmo.Views.GererPret.Forms
                 Intervention uneIntervention = new Intervention(date, montantttc, information, null);
                 ImmoContext ctx = ImmoContext.getInstance();
                 ctx.Intervention.Add(uneIntervention);
-                ctx.SaveChanges();
+                ctx.SaveChanges();*/
 
                 this.notifyObservers();
 
-                MessageBox.Show("Intervention ajouté avec succès!");
+                /*MessageBox.Show("Intervention ajouté avec succès!");
             }
             else
             {
@@ -89,5 +87,7 @@ namespace GestImmo.Views.GererPret.Forms
             }*/
 
         }
+
+
     }
 }
