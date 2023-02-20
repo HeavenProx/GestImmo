@@ -11,9 +11,10 @@
     <ListView x:Name="ListInterventionView_Section" d:ItemsSource="{d:SampleData ItemCount=5}">
         <ListView.View>
             <GridView>
-                <GridViewColumn>Bien</GridViewColumn>
-                <GridViewColumn>Prestataire</GridViewColumn>
-                <GridViewColumn>Date</GridViewColumn>
+                <GridViewColumn Width="100" DisplayMemberBinding="{Binding NomBien}">Bien</GridViewColumn>
+                <GridViewColumn Width="90" DisplayMemberBinding="{Binding Prestataire}">Prestataire</GridViewColumn>
+                <GridViewColumn Width="90" DisplayMemberBinding="{Binding MontantTTC}">Montant TTC</GridViewColumn>
+                <GridViewColumn Width="100" DisplayMemberBinding="{Binding DateIntervention}">Date</GridViewColumn>
             </GridView>
         </ListView.View>
     </ListView>
