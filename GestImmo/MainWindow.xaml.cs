@@ -2,6 +2,7 @@
 using GestImmo.Data.DAL;
 using GestImmo.Models;
 using GestImmo.Views;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,8 @@ namespace GestImmo
 
             ImmoContext ImmoContext = new ImmoContext();
             ImmoContext ctx = ImmoContext.getInstance();
+
+            
         }
     }
 }
