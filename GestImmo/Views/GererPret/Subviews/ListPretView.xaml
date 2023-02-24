@@ -11,9 +11,9 @@
     <ListView x:Name="ListPretView_Section" d:ItemsSource="{d:SampleData ItemCount=5}">
         <ListView.View>
             <GridView>
-                <GridViewColumn>Bien</GridViewColumn>
-                <GridViewColumn>Mensualité</GridViewColumn>
-                <GridViewColumn>Montant</GridViewColumn>
+                <GridViewColumn Width="120" DisplayMemberBinding="{Binding NomBien}">Bien</GridViewColumn>
+                <GridViewColumn Width="133" DisplayMemberBinding="{Binding Mensualite}">Mensualité</GridViewColumn>
+                <GridViewColumn Width="133" DisplayMemberBinding="{Binding Montant}">Montant</GridViewColumn>
             </GridView>
         </ListView.View>
     </ListView>

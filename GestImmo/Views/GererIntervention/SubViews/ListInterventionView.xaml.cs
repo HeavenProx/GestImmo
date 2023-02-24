@@ -39,7 +39,7 @@ namespace GestImmo.Views.GererIntervention.SubViews
 
             foreach (Intervention intervention in ctx.Intervention)
             {
-                this.ListInterventionView_Section.Items.Add(intervention.DateIntervention);
+                this.ListInterventionView_Section.Items.Add(intervention);
             }
         }
 

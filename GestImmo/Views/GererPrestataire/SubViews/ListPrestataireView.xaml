@@ -11,9 +11,10 @@
     <ListView x:Name="ListPrestataireView_Section" d:ItemsSource="{d:SampleData ItemCount=5}">
         <ListView.View>
             <GridView>
-                <GridViewColumn>Raison sociale</GridViewColumn>
-                <GridViewColumn>Nom Prenom</GridViewColumn>
-                <GridViewColumn>Téléphone</GridViewColumn>
+                <GridViewColumn Width="100" DisplayMemberBinding="{Binding RaisonSociale}">Raison sociale</GridViewColumn>
+                <GridViewColumn Width="100" DisplayMemberBinding="{Binding Nom}">Nom</GridViewColumn>
+                <GridViewColumn Width="100" DisplayMemberBinding="{Binding Prenom}">Prenom</GridViewColumn>
+                <GridViewColumn Width="100" DisplayMemberBinding="{Binding Telephone}">Téléphone</GridViewColumn>
             </GridView>
         </ListView.View>
     </ListView>

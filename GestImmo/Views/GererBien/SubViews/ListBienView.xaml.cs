@@ -42,9 +42,7 @@ namespace GestImmo.Views.SubViews
 
             foreach (Bien bien in ctx.Bien)
             {
-                    this.ListBienView_Section.Items.Add(bien.NomBien);
-                    this.ListBienView_Section.Items.Add(bien.Surface);
-                    this.ListBienView_Section.Items.Add(bien.Valeur);
+                    this.ListBienView_Section.Items.Add(bien);
             }
         }
 

@@ -39,9 +39,7 @@ namespace GestImmo.Views.GererPrestataire.SubViews
 
             foreach (Prestataire prestataire in ctx.Prestataire)
             {
-                this.ListPrestataireView_Section.Items.Add(prestataire.Nom);
-                this.ListPrestataireView_Section.Items.Add(prestataire.Prenom);
-                this.ListPrestataireView_Section.Items.Add(prestataire.RaisonSociale);
+                this.ListPrestataireView_Section.Items.Add(prestataire);
             }
         }
 
