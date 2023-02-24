@@ -1,6 +1,9 @@
-﻿using System;
+﻿using GestImmo.Data.DAL;
+using GestImmo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +26,40 @@ namespace GestImmo.Views.SubViews
         public HomeView()
         {
             InitializeComponent();
+            this.updateList(); 
+        }
+
+        private void updateList()
+        {
+            ImmoContext ctx = ImmoContext.getInstance();
+
+            int nbBien = 0;
+            foreach (Bien bien in ctx.Bien)
+            { nbBien++; }
+            if(nbBien <= 2){ valeurNbBien.Content = nbBien + " bien"; }
+            else{ valeurNbBien.Content = nbBien + " biens au total"; }
+
+            int nbPret = 0;
+            foreach(Pret pret in ctx.Pret)
+            { nbPret++; }
+            if (nbBien <= 2) { valeurNbPret.Content = nbPret + " prêt"; }
+            else { valeurNbPret.Content = nbPret + " prêts au total"; }
+
+            int beneficeMensuel = 0;
+            foreach (Pret pret in ctx.Pret)
+            {
+                beneficeMensuel = beneficeMensuel + pret.TauxInteret; 
+            }
+            valeurBenefMensuelCum.Content = beneficeMensuel + " €";
+
+            int detteMensuel = 0;
+            valeurDetteMensuelCum.Content = detteMensuel + " €";
+
+            int masseTotalDette = 0;
+            valeurMasseTotaleDette.Content = masseTotalDette + " €";
+
+            int loyerMensuelCumule = 0;
+            valeurLoyerMensuelCumule.Content = loyerMensuelCumule + " €";
         }
     }
 }

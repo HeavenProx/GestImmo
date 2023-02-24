@@ -44,17 +44,6 @@ namespace GestImmo.Views.Forms
                 int cave = int.Parse(Cave_TextBox.Text);
                 int parking = int.Parse(Parking_TextBox.Text);
 
-                /*bool chauffage = false;
-                if (Chauffage_TextBox.Text == 1)
-                {
-                    chauffage = true;
-                }
-                bool ascenseur = false;
-                if (Ascenseur_TextBox.Text == 1)
-                {
-                    ascenseur = true;
-                }*/
-
                 Maison uneMaison = new Maison(nom, valeur, surface, adresse, null, null, null, nbPieces, nbChambres, cave, parking);
                 ImmoContext ctx = ImmoContext.getInstance();
                 ctx.Bien.Add(uneMaison);

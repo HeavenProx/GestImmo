@@ -1,0 +1,36 @@
+﻿<Page x:Class="GestImmo.Views.GererBien.Forms.ConsulterBoxForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmo.Views.GererBien.Forms"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="400"
+      Title="ConsulterBoxForm">
+
+    <Grid Margin="15,15,15,15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="NomBien_TextBox" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextChanged="NomBien_TextBox_TextChanged"/>
+        <TextBox x:Name="ValeurBien_TextBox" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextChanged="ValeurBien_TextBox_TextChanged"/>
+        <TextBox x:Name="AdresseBien_TextBox" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextChanged="AdresseBien_TextBox_TextChanged"/>
+        <TextBox x:Name="SurfaceBien_TextBox" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextChanged="SurfaceBien_TextBox_TextChanged"/>
+
+        <Label x:Name="Lbl_NomBien" Grid.Row="0" Grid.Column="0" Content="Nom" VerticalAlignment="Center"/>
+        <Label x:Name="Lbl_ValeurBien" Grid.Row="1" Grid.Column="0" Content="Valeur" VerticalAlignment="Center"/>
+        <Label x:Name="Lbl_AdresseBien" Grid.Row="2" Grid.Column="0" Content="Adresse" VerticalAlignment="Center"/>
+        <Label x:Name="Lbl_SurfaceBien" Grid.Row="3" Grid.Column="0" Content="Surface(m2)" VerticalAlignment="Center"/>
+        <Button x:Name="Bouton_Modifier_Bien" Grid.Row="4" Grid.Column="1" Content="Modifier une box" VerticalAlignment="Center" Height="22" Click="Bouton_Modifier_Bien_Click" Margin="10,0,146,0"/>
+        <Button x:Name="Bouton_Supprimer_Bien" Grid.Row="4" Grid.Column="1" Content="Supprimer une box" VerticalAlignment="Center" Height="22" Click="Bouton_Supprimer_Bien_Click" Margin="146,0,10,0"/>
+
+    </Grid>
+</Page>

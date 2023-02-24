@@ -39,7 +39,7 @@ namespace GestImmo.Views.GererPret.Subviews
 
             foreach (Pret pret in ctx.Pret)
             {
-                this.ListPretView_Section.Items.Add(pret);
+                this.ListPretView_Section.Items.Add(pret.Montant);
             }
         }
 

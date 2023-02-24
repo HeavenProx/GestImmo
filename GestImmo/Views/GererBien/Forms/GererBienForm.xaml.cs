@@ -1,4 +1,5 @@
-﻿using GestImmo.Views.SubViews;
+﻿using GestImmo.Views.GererBien.Forms;
+using GestImmo.Views.SubViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,6 +48,16 @@ namespace GestImmo.Views.Forms
                 gererBoxForm.Observers.Add(this.obs);
                 this.Frame_Ajouter_Bien.Navigate(gererBoxForm);
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

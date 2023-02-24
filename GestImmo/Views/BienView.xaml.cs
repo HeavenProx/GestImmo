@@ -1,4 +1,5 @@
 ﻿using GestImmo.Views.Forms;
+using GestImmo.Views.GererBien.Forms;
 using GestImmo.Views.SubViews;
 using System;
 using System.Collections.Generic;
@@ -22,16 +23,18 @@ namespace GestImmo.Views
     /// </summary>
     public partial class BienView : Page
     {
+        private GererBienForm gererBienForm;
+
         public BienView()
         {
             InitializeComponent();
-            ListBienView listBienView = new ListBienView();
+            ListBienView listBienView = new ListBienView(this.Ajouter_Bien);
             this.Frame_Consulter_Bien.Navigate(listBienView);
             this.Ajouter_Bien.Navigate(new GererBienForm(listBienView));
         }
         private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
-            this.Frame_Consulter_Bien.Navigate(new ListBienView());
+            this.Frame_Consulter_Bien.Navigate(new ListBienView(this.Ajouter_Bien));
         }
     }
 }
