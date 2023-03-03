@@ -27,7 +27,6 @@ namespace GestImmo.Views.SubViews
     {
         //private Frame consulterBoxForm;
         public Frame Ajouter_Bien;
-        ImmoContext ctx = ImmoContext.getInstance();
 
         
         public ListBienView(Frame Ajouter_Bien)
@@ -35,8 +34,6 @@ namespace GestImmo.Views.SubViews
             InitializeComponent();
             this.Ajouter_Bien = Ajouter_Bien;
             this.updateList();
-
-            //this.consulterBoxForm = consulterBoxForm;
         }
 
         private void updateList()
@@ -62,7 +59,6 @@ namespace GestImmo.Views.SubViews
             ImmoContext ctx = ImmoContext.getInstance();
             Bien unBien = (Bien)(sender as ListBox).SelectedItem;
 
-            //ConsulterBoxForm(unBien.BienId);
             if (unBien != null)
             {
                 if (unBien is Box)
@@ -85,17 +81,11 @@ namespace GestImmo.Views.SubViews
             }
         }
 
-        /*private void Frame_Navigated(object sender, NavigationEventArgs e)
-        {
-            this.Ajouter_Bien.Navigate(new ConsulterBoxForm(this.Ajouter_Bien));
-        }*/
-
-        public void chargerViewParId(int id)
+        /*public void chargerViewParId(int id)
         {
             ImmoContext ctx = ImmoContext.getInstance();
             bool place = false;
             Bien bien = ctx.Bien.Find(id);
-
-        }
+        }*/
     }
 }
