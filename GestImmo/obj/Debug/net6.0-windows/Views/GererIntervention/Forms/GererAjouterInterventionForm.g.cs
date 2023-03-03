@@ -10,6 +10,7 @@
 //------------------------------------------------------------------------------
 
 using GestImmo.Views.GererIntervention.Forms;
+using GestImmo.Views.SubViews;
 using System;
 using System.Diagnostics;
 using System.Windows;

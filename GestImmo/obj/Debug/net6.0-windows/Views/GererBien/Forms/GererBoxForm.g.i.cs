@@ -125,7 +125,7 @@ namespace GestImmo.Views.Forms {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;component/views/gererbien/forms/gererboxform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/views/gererbien/forms/gererboxform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\GererBien\Forms\GererBoxForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

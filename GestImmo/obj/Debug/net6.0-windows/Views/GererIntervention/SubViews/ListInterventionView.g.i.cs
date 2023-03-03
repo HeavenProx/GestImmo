@@ -61,7 +61,8 @@ namespace GestImmo.Views.GererIntervention.SubViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;component/views/gererintervention/subviews/listinterventionview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/views/gererintervention/subviews/listinterventionvie" +
+                    "w.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\GererIntervention\SubViews\ListInterventionView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

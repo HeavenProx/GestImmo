@@ -69,7 +69,7 @@ namespace GestImmo.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;component/views/interventionview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/views/interventionview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\InterventionView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

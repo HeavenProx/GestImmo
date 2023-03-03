@@ -61,7 +61,7 @@ namespace GestImmo.Views.GererPret.Forms {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;component/views/gererpret/forms/gererajouterpretform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/views/gererpret/forms/gererajouterpretform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\GererPret\Forms\GererAjouterPretForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

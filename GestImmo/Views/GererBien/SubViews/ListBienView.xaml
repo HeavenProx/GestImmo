@@ -12,8 +12,13 @@
         <ListView.View>
             <GridView>
                 <GridViewColumn x:Name="NomBien" Width="133" DisplayMemberBinding="{Binding NomBien}">Nom</GridViewColumn>
+<<<<<<< HEAD
                 <GridViewColumn x:Name="Valeur"  Width="133" DisplayMemberBinding="{Binding Valeur, StringFormat=\{0\}€}">Valeur</GridViewColumn>
                 <GridViewColumn x:Name="Surface" Width="133" DisplayMemberBinding="{Binding Surface, StringFormat=\{0\}m²}">Surface</GridViewColumn>
+=======
+                <GridViewColumn x:Name="Valeur"  Width="133" DisplayMemberBinding="{Binding Valeur}">Valeur</GridViewColumn>
+                <GridViewColumn x:Name="Surface" Width="133" DisplayMemberBinding="{Binding Surface}">Surface</GridViewColumn>
+>>>>>>> 0fe1bb8641980807b33b5282e747f0285e2069da
             </GridView>
         </ListView.View>
     </ListView>

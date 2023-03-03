@@ -61,8 +61,8 @@ namespace GestImmo.Views.GererPrestataire.Forms {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;component/views/gererprestataire/forms/gererajouterprestataireform.xaml" +
-                    "", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/views/gererprestataire/forms/gererajouterprestataire" +
+                    "form.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

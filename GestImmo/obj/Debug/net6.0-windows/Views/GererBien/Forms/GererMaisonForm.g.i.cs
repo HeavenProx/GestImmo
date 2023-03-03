@@ -189,7 +189,7 @@ namespace GestImmo.Views.Forms {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;component/views/gererbien/forms/gerermaisonform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/views/gererbien/forms/gerermaisonform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\GererBien\Forms\GererMaisonForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

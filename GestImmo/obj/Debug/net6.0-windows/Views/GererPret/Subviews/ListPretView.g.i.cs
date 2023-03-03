@@ -61,7 +61,7 @@ namespace GestImmo.Views.GererPret.Subviews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;component/views/gererpret/subviews/listpretview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/views/gererpret/subviews/listpretview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\GererPret\Subviews\ListPretView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

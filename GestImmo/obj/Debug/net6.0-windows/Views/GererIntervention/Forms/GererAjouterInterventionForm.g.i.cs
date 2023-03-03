@@ -10,6 +10,7 @@
 //------------------------------------------------------------------------------
 
 using GestImmo.Views.GererIntervention.Forms;
+using GestImmo.Views.SubViews;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -61,8 +62,8 @@ namespace GestImmo.Views.GererIntervention.Forms {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;component/views/gererintervention/forms/gererajouterinterventionform.xa" +
-                    "ml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/views/gererintervention/forms/gererajouterinterventi" +
+                    "onform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

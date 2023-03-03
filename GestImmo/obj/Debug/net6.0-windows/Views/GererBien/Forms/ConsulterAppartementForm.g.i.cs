@@ -245,7 +245,7 @@ namespace GestImmo.Views.GererBien.Forms {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestImmo;component/views/gererbien/forms/consulterappartementform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestImmo;V1.0.0.0;component/views/gererbien/forms/consulterappartementform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\GererBien\Forms\ConsulterAppartementForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
