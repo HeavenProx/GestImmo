@@ -36,5 +36,10 @@ namespace GestImmo.Views
         {
             this.Frame_Consulter_Bien.Navigate(new ListBienView(this.Ajouter_Bien));
         }
+
+        private void Ajouter_Bien_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

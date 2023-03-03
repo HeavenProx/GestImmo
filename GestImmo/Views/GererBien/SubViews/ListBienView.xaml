@@ -6,14 +6,14 @@
       xmlns:local="clr-namespace:GestImmo.Views.SubViews"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="400"
-      Title="ListBienView" >
+      Title="ListBienView">
     
     <ListView x:Name="ListBienView_Section" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBienView_Section_SelectionChanged">
         <ListView.View>
             <GridView>
                 <GridViewColumn x:Name="NomBien" Width="133" DisplayMemberBinding="{Binding NomBien}">Nom</GridViewColumn>
-                <GridViewColumn x:Name="Valeur"  Width="133" DisplayMemberBinding="{Binding Valeur}">Valeur</GridViewColumn>
-                <GridViewColumn x:Name="Surface" Width="133" DisplayMemberBinding="{Binding Surface}">Surface</GridViewColumn>
+                <GridViewColumn x:Name="Valeur"  Width="133" DisplayMemberBinding="{Binding Valeur, StringFormat=\{0\}€}">Valeur</GridViewColumn>
+                <GridViewColumn x:Name="Surface" Width="133" DisplayMemberBinding="{Binding Surface, StringFormat=\{0\}m²}">Surface</GridViewColumn>
             </GridView>
         </ListView.View>
     </ListView>

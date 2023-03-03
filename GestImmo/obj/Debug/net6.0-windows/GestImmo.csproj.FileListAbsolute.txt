@@ -574,3 +574,7 @@ C:\Users\h.duperthuy\Desktop\Projet GestImmo\GestImmo\GestImmo\obj\Debug\net6.0-
 C:\Users\h.duperthuy\Desktop\Projet GestImmo\GestImmo\GestImmo\obj\Debug\net6.0-windows\ref\GestImmo.dll
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBien\Forms\ConsulterBoxForm.g.cs
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBien\Forms\ConsulterBoxForm.baml
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBien\Forms\ConsulterMaisonForm.g.cs
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBien\Forms\ConsulterMaisonForm.baml
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBien\Forms\ConsulterAppartementForm.g.cs
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBien\Forms\ConsulterAppartementForm.baml

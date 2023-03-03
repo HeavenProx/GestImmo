@@ -10,7 +10,13 @@
     <Compile Update="Views\BienView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\GererBien\Forms\ConsulterAppartementForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\GererBien\Forms\ConsulterBoxForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GererBien\Forms\ConsulterMaisonForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\GererBien\Forms\GererAppartementForm.xaml.cs">
@@ -78,7 +84,13 @@
     <Page Update="Views\BienView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\GererBien\Forms\ConsulterAppartementForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\GererBien\Forms\ConsulterBoxForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GererBien\Forms\ConsulterMaisonForm.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\GererBien\Forms\GererAppartementForm.xaml">

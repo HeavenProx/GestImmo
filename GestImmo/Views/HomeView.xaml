@@ -9,15 +9,15 @@
       Title="HomeView">
 
     <Grid>
-        <Label Content="Tableau de bord" FontSize="22px" Margin="312,42,312,372"/>
-        <Label Content="Nombre de bien" FontSize="18px" Margin="38,170,600,249"/>
+        <Label Content="Tableau de bord" FontSize="22px" Margin="312,42,277,372"/>
+        <Label Content="Nombre de bien" FontSize="18px" Margin="52,170,586,249"/>
         <Label Content="Bénéfice mensuel cumulé" FontSize="18px" Margin="294,170,256,249"/>
         <Label Content="Masse totale dette" FontSize="18px" Margin="600,172,16,247"/>
-        <Label Content="Nombre de prêt" FontSize="18px" Margin="57,350,566,69"/>
+        <Label Content="Nombre de prêt" FontSize="18px" Margin="52,350,571,69"/>
         <Label Content="Dette mensuel cumulé" FontSize="18px" Margin="308,350,277,69"/>
         <Label Content="Loyer mensuel cumulé" FontSize="18px" Margin="572,350,10,69"/>
 
-        <Label x:Name="valeurNbBien" Content="" FontSize="16px" Margin="38,198,606,220"/>
+        <Label x:Name="valeurNbBien" Content="" FontSize="16px" Margin="57,198,587,220"/>
         <Label x:Name="valeurNbPret" Content="" FontSize="16px" Margin="60,377,603,41"/>
         <Label x:Name="valeurBenefMensuelCum" Content="" FontSize="16px" Margin="315,377,348,41"/>
         <Label x:Name="valeurDetteMensuelCum" Content="" FontSize="16px" Margin="319,198,322,220"/>

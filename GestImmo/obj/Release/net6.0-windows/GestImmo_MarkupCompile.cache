@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\App.xaml
-22-1574355165
+24217122196
 
-411503729551
+431053900483
 208-1716459877
-MainWindow.xaml;Views\BienView.xaml;Views\GererBien\Forms\ConsulterBoxForm.xaml;Views\GererBien\Forms\GererAppartementForm.xaml;Views\GererBien\Forms\GererBienForm.xaml;Views\GererBien\Forms\GererBoxForm.xaml;Views\GererBien\Forms\GererMaisonForm.xaml;Views\GererBien\SubViews\ListBienView.xaml;Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml;Views\GererIntervention\Forms\GererInterventionForm.xaml;Views\GererIntervention\SubViews\ListInterventionView.xaml;Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml;Views\GererPrestataire\Forms\GererPrestataireForm.xaml;Views\GererPrestataire\SubViews\ListPrestataireView.xaml;Views\GererPret\Forms\GererAjouterPretForm.xaml;Views\GererPret\Forms\GererPretForm.xaml;Views\GererPret\Subviews\ListPretView.xaml;Views\HomeView.xaml;Views\InterventionView.xaml;Views\NavigationView.xaml;Views\PrestataireView.xaml;Views\PretView.xaml;
+MainWindow.xaml;Views\BienView.xaml;Views\GererBien\Forms\ConsulterAppartementForm.xaml;Views\GererBien\Forms\ConsulterBoxForm.xaml;Views\GererBien\Forms\ConsulterMaisonForm.xaml;Views\GererBien\Forms\GererAppartementForm.xaml;Views\GererBien\Forms\GererBienForm.xaml;Views\GererBien\Forms\GererBoxForm.xaml;Views\GererBien\Forms\GererMaisonForm.xaml;Views\GererBien\SubViews\ListBienView.xaml;Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml;Views\GererIntervention\Forms\GererInterventionForm.xaml;Views\GererIntervention\SubViews\ListInterventionView.xaml;Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml;Views\GererPrestataire\Forms\GererPrestataireForm.xaml;Views\GererPrestataire\SubViews\ListPrestataireView.xaml;Views\GererPret\Forms\GererAjouterPretForm.xaml;Views\GererPret\Forms\GererPretForm.xaml;Views\GererPret\Subviews\ListPretView.xaml;Views\HomeView.xaml;Views\InterventionView.xaml;Views\NavigationView.xaml;Views\PrestataireView.xaml;Views\PretView.xaml;
 
 True
 

@@ -2,6 +2,9 @@
 
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\MainWindow.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\BienView.xaml;;
+FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererBien\Forms\ConsulterAppartementForm.xaml;;
+FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererBien\Forms\ConsulterBoxForm.xaml;;
+FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererBien\Forms\ConsulterMaisonForm.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererBien\Forms\GererAppartementForm.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererBien\Forms\GererBienForm.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererBien\Forms\GererBoxForm.xaml;;
@@ -21,5 +24,4 @@ FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\InterventionView.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\NavigationView.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\PrestataireView.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\PretView.xaml;;
-FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererBien\Forms\ConsulterBoxForm.xaml;;
 

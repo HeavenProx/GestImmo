@@ -10,7 +10,7 @@
 
     <Grid>
         <Frame x:Name="Frame_Consulter_Bien" Content="Frame" Margin="0,0,400,0" />
-        <Frame x:Name="Ajouter_Bien" Content="Frame" Margin="400,0,0,0" />
+        <Frame x:Name="Ajouter_Bien" Content="Frame" Margin="400,0,0,0" Navigated="Ajouter_Bien_Navigated" />
         
 
     </Grid>

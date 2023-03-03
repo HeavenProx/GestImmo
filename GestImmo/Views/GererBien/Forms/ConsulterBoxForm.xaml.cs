@@ -1,10 +1,15 @@
-﻿using System;
+﻿using GestImmo.Data.DAL;
+using GestImmo.Models;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -20,15 +25,24 @@ namespace GestImmo.Views.GererBien.Forms
     /// </summary>
     public partial class ConsulterBoxForm : Page
     {
-        private Frame Ajouter_Bien;
-        public ConsulterBoxForm()
+        private Bien bien;
+        
+        public ConsulterBoxForm(Bien bien)
         {
             InitializeComponent();
+            this.bien = bien;
+
+            this.NomBien_TextBox.Text = bien.NomBien;
+            this.ValeurBien_TextBox.Text = bien.Valeur.ToString();
+            this.AdresseBien_TextBox.Text = bien.Adresse;
+            this.SurfaceBien_TextBox.Text = bien.Surface.ToString();
+
+            
         }
 
         private void NomBien_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
 
         private void ValeurBien_TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -53,7 +67,18 @@ namespace GestImmo.Views.GererBien.Forms
 
         private void Bouton_Supprimer_Bien_Click(object sender, RoutedEventArgs e)
         {
+            if (MessageBox.Show("Etes vous sûr de supprimer cette box ?",
+                "Oui",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                ImmoContext ctx = ImmoContext.getInstance();
+                ctx.Bien.Remove(this.bien);
+                ctx.SaveChanges();
+                //this.notifyObservers();
 
+                MessageBox.Show("La box " + bien.NomBien + " a été supprimé !");
+            }
         }
     }
 }

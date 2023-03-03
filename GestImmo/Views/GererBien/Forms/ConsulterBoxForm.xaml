@@ -29,8 +29,8 @@
         <Label x:Name="Lbl_ValeurBien" Grid.Row="1" Grid.Column="0" Content="Valeur" VerticalAlignment="Center"/>
         <Label x:Name="Lbl_AdresseBien" Grid.Row="2" Grid.Column="0" Content="Adresse" VerticalAlignment="Center"/>
         <Label x:Name="Lbl_SurfaceBien" Grid.Row="3" Grid.Column="0" Content="Surface(m2)" VerticalAlignment="Center"/>
-        <Button x:Name="Bouton_Modifier_Bien" Grid.Row="4" Grid.Column="1" Content="Modifier une box" VerticalAlignment="Center" Height="22" Click="Bouton_Modifier_Bien_Click" Margin="10,0,146,0"/>
-        <Button x:Name="Bouton_Supprimer_Bien" Grid.Row="4" Grid.Column="1" Content="Supprimer une box" VerticalAlignment="Center" Height="22" Click="Bouton_Supprimer_Bien_Click" Margin="146,0,10,0"/>
+        <Button x:Name="Bouton_Modifier_Bien" Grid.Row="4" Grid.Column="1" Content="Modifier" VerticalAlignment="Center" Height="22" Click="Bouton_Modifier_Bien_Click" Margin="0,0,162,0"/>
+        <Button x:Name="Bouton_Supprimer_Bien" Grid.Row="4" Grid.Column="1" Content="Supprimer" VerticalAlignment="Center" Height="22" Click="Bouton_Supprimer_Bien_Click" Margin="160,0,0,0"/>
 
     </Grid>
 </Page>

@@ -25,17 +25,18 @@ namespace GestImmo.Views.SubViews
     /// </summary>
     public partial class ListBienView : Page, IObserver
     {
-        private Frame consulterBoxForm;
-        private Frame Ajouter_Bien;
+        //private Frame consulterBoxForm;
+        public Frame Ajouter_Bien;
         ImmoContext ctx = ImmoContext.getInstance();
 
         
-        public ListBienView(Frame consulterBoxForm)
+        public ListBienView(Frame Ajouter_Bien)
         {
             InitializeComponent();
+            this.Ajouter_Bien = Ajouter_Bien;
             this.updateList();
 
-            this.consulterBoxForm = consulterBoxForm;
+            //this.consulterBoxForm = consulterBoxForm;
         }
 
         private void updateList()
@@ -60,10 +61,28 @@ namespace GestImmo.Views.SubViews
         {
             ImmoContext ctx = ImmoContext.getInstance();
             Bien unBien = (Bien)(sender as ListBox).SelectedItem;
-            //ConsulterBoxForm(unBien.BienId);
 
-            //ConsulterBoxForm consulterBoxForm = new ConsulterBoxForm(this.Ajouter_Bien);
-            //this.Ajouter_Bien.Navigate(new ConsulterBoxForm());
+            //ConsulterBoxForm(unBien.BienId);
+            if (unBien != null)
+            {
+                if (unBien is Box)
+                {
+                    ConsulterBoxForm consulterBoxForm = new ConsulterBoxForm(unBien);
+                    this.Ajouter_Bien.Navigate(consulterBoxForm);
+                }
+                else if (unBien is Maison)
+                {
+                    Maison uneMaison = (Maison)(sender as ListBox).SelectedItem;
+                    ConsulterMaisonForm consulterMaisonForm = new ConsulterMaisonForm(uneMaison);
+                    this.Ajouter_Bien.Navigate(consulterMaisonForm);
+                }
+                else if (unBien is Appartement)
+                {
+                    Appartement unAppartement = (Appartement)(sender as ListBox).SelectedItem;
+                    ConsulterAppartementForm consulterAppartementForm = new ConsulterAppartementForm(unAppartement);
+                    this.Ajouter_Bien.Navigate(consulterAppartementForm);
+                }
+            }
         }
 
         /*private void Frame_Navigated(object sender, NavigationEventArgs e)
