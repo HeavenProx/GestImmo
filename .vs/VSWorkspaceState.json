@@ -2,13 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\GestImmo",
+    "\\GestImmo\\Data",
+    "\\GestImmo\\Data\\DAO",
     "\\GestImmo\\Views",
     "\\GestImmo\\Views\\GererBien",
-    "\\GestImmo\\Views\\GererBien\\Forms",
     "\\GestImmo\\Views\\GererBien\\SubViews",
     "\\GestImmo\\Views\\GererIntervention",
-    "\\GestImmo\\Views\\GererIntervention\\Forms"
+    "\\GestImmo\\Views\\GererIntervention\\Forms",
+    "\\GestImmo\\Views\\GererPret",
+    "\\GestImmo\\Views\\GererPret\\Forms"
   ],
-  "SelectedNode": "\\GestImmo\\Views\\GererIntervention\\Forms\\GererInterventionForm.xaml",
+  "SelectedNode": "\\GestImmo\\Views\\GererBien\\Forms\\ConsulterBoxForm.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

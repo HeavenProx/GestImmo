@@ -1,5 +1,7 @@
 ﻿using GestImmo.Data.DAL;
 using GestImmo.Models;
+using GestImmo.Views.GererBien.Forms;
+using GestImmo.Views.GererIntervention.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +24,14 @@ namespace GestImmo.Views.GererIntervention.SubViews
     /// </summary>
     public partial class ListInterventionView : Page, IObserver
     {
+        private Frame Ajouter_Intervention;
+
         ImmoContext ctx = ImmoContext.getInstance();
 
-        public ListInterventionView()
+        public ListInterventionView(Frame Ajouter_Intervention)
         {
             InitializeComponent();
+            this.Ajouter_Intervention = Ajouter_Intervention;
             this.updateList();
         }
 
@@ -47,5 +52,15 @@ namespace GestImmo.Views.GererIntervention.SubViews
         {
             this.updateList();
         }
+
+        private void ListInterventionView_Section_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ImmoContext ctx = ImmoContext.getInstance();
+            Intervention uneIntervention = (Intervention)(sender as ListBox).SelectedItem;
+
+            ConsulterIntervention consulterIntervention = new ConsulterIntervention(uneIntervention);
+            this.Ajouter_Intervention.Navigate(consulterIntervention);
+        }
+      
     }
 }

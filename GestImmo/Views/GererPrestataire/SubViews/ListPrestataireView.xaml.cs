@@ -1,5 +1,7 @@
 ﻿using GestImmo.Data.DAL;
 using GestImmo.Models;
+using GestImmo.Views.GererBien.Forms;
+using GestImmo.Views.GererPrestataire.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +24,14 @@ namespace GestImmo.Views.GererPrestataire.SubViews
     /// </summary>
     public partial class ListPrestataireView : Page, IObserver
     {
+        private Frame Ajouter_Prestataire;
+
         ImmoContext ctx = ImmoContext.getInstance();
 
-        public ListPrestataireView()
+        public ListPrestataireView(Frame Ajouter_Prestataire)
         {
             InitializeComponent();
+            this.Ajouter_Prestataire = Ajouter_Prestataire;
             this.updateList();
         }
 
@@ -48,6 +53,15 @@ namespace GestImmo.Views.GererPrestataire.SubViews
         public void update()
         {
             this.updateList();
+        }
+
+        private void ListPrestataireView_Section_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ImmoContext ctx = ImmoContext.getInstance();
+            Prestataire unPrestataire = (Prestataire)(sender as ListBox).SelectedItem;
+
+            ConsulterPrestataire consulterPrestataire = new ConsulterPrestataire(unPrestataire);
+            this.Ajouter_Prestataire.Navigate(consulterPrestataire);
         }
     }
 }

@@ -31,6 +31,9 @@
     <Compile Update="Views\GererBien\Forms\GererMaisonForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\GererIntervention\Forms\ConsulterIntervention.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +43,9 @@
     <Compile Update="Views\GererIntervention\SubViews\ListInterventionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\GererPrestataire\Forms\ConsulterPrestataire.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +53,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\GererPrestataire\SubViews\ListPrestataireView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GererPret\Forms\ConsulterPret.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\GererPret\Forms\GererAjouterPretForm.xaml.cs">
@@ -105,6 +114,9 @@
     <Page Update="Views\GererBien\Forms\GererMaisonForm.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\GererIntervention\Forms\ConsulterIntervention.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -114,6 +126,9 @@
     <Page Update="Views\GererIntervention\SubViews\ListInterventionView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\GererPrestataire\Forms\ConsulterPrestataire.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -121,6 +136,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\GererPrestataire\SubViews\ListPrestataireView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GererPret\Forms\ConsulterPret.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\GererPret\Forms\GererAjouterPretForm.xaml">

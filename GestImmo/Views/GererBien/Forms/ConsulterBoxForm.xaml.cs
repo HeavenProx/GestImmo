@@ -1,5 +1,6 @@
 ﻿using GestImmo.Data.DAL;
 using GestImmo.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -62,6 +63,22 @@ namespace GestImmo.Views.GererBien.Forms
 
         private void Bouton_Modifier_Bien_Click(object sender, RoutedEventArgs e)
         {
+            if (MessageBox.Show("Etes vous sûr de modifier cette box ?",
+                "Oui",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                ImmoContext ctx = ImmoContext.getInstance();
+                this.bien.NomBien = NomBien_TextBox.Text;
+                this.bien.Valeur = int.Parse(ValeurBien_TextBox.Text);
+                this.bien.Adresse = AdresseBien_TextBox.Text;
+                this.bien.Surface = int.Parse(SurfaceBien_TextBox.Text);
+
+                ctx.SaveChanges();
+                //this.notifyObservers();
+
+                MessageBox.Show("La box " + bien.NomBien + " a été modifié !");
+            }
 
         }
 
@@ -75,7 +92,6 @@ namespace GestImmo.Views.GererBien.Forms
                 ImmoContext ctx = ImmoContext.getInstance();
                 ctx.Bien.Remove(this.bien);
                 ctx.SaveChanges();
-                //this.notifyObservers();
 
                 MessageBox.Show("La box " + bien.NomBien + " a été supprimé !");
             }

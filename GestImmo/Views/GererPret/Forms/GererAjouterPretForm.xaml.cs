@@ -21,17 +21,12 @@ namespace GestImmo.Views.GererPret.Forms
     /// </summary>
     public partial class GererAjouterPretForm : Page
     {
-        public GererAjouterPretForm()
-        {
-            InitializeComponent();
-            this.Frame_Ajouter_Pret.Navigate(new GererPretForm());
-        }
-
         private IObserver? obs;
         public GererAjouterPretForm(IObserver obs)
         {
             InitializeComponent();
             this.obs = obs;
+            this.Frame_Ajouter_Pret.Navigate(new GererPretForm());
         }
     }
 }

@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="400"
       Title="ListPretView" >
 
-    <ListView x:Name="ListPretView_Section" d:ItemsSource="{d:SampleData ItemCount=5}">
+    <ListView x:Name="ListPretView_Section" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListPretView_Section_SelectionChanged">
         <ListView.View>
             <GridView>
                 <GridViewColumn Width="120" DisplayMemberBinding="{Binding NomBien}">Bien</GridViewColumn>

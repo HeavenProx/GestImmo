@@ -25,13 +25,13 @@ namespace GestImmo.Views
         public PretView()
         {
             InitializeComponent();
-            ListPretView listPretView = new ListPretView();
+            ListPretView listPretView = new ListPretView(this.Ajouter_Pret);
             this.Frame_Consulter_Pret.Navigate(listPretView);
             this.Ajouter_Pret.Navigate(new GererAjouterPretForm(listPretView));
         }
         private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
-            this.Frame_Consulter_Pret.Navigate(new ListPretView());
+            this.Frame_Consulter_Pret.Navigate(new ListPretView(this.Ajouter_Pret));
         }
     }
 }

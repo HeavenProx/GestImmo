@@ -1,5 +1,7 @@
 ﻿using GestImmo.Data.DAL;
 using GestImmo.Models;
+using GestImmo.Views.GererBien.Forms;
+using GestImmo.Views.GererPret.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +24,15 @@ namespace GestImmo.Views.GererPret.Subviews
     /// </summary>
     public partial class ListPretView : Page, IObserver
     {
+
+        public Frame Ajouter_Pret;
+
         ImmoContext ctx = ImmoContext.getInstance();
 
-        public ListPretView()
+        public ListPretView(Frame Ajouter_Pret)
         {
             InitializeComponent();
+            this.Ajouter_Pret = Ajouter_Pret;
             this.updateList();
         }
 
@@ -39,13 +45,22 @@ namespace GestImmo.Views.GererPret.Subviews
 
             foreach (Pret pret in ctx.Pret)
             {
-                this.ListPretView_Section.Items.Add(pret.Montant);
+                this.ListPretView_Section.Items.Add(pret);
             }
         }
 
         public void update()
         {
             this.updateList();
+        }
+
+        private void ListPretView_Section_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ImmoContext ctx = ImmoContext.getInstance();
+            Pret unPret = (Pret)(sender as ListBox).SelectedItem;
+
+            ConsulterPret consulterPret = new ConsulterPret(unPret);
+            this.Ajouter_Pret.Navigate(consulterPret);
         }
     }
 }

@@ -32,7 +32,7 @@ namespace GestImmo.Views.GererPret.Forms
             ImmoContext ctx = ImmoContext.getInstance();
             foreach (Bien bien in ctx.Bien)
             {
-                BienPret_ComboBox.Items.Add(bien.NomBien + " - id : " + bien.BienId);
+                BienPret_ComboBox.Items.Add(bien.NomBien);
             }
         }
 
@@ -54,6 +54,10 @@ namespace GestImmo.Views.GererPret.Forms
         {
 
         }
+        private void MontantPret_TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
 
         void notifyObservers()
         {
@@ -65,29 +69,32 @@ namespace GestImmo.Views.GererPret.Forms
 
         private void Bouton_Ajouter_Pret_Click(object sender, RoutedEventArgs e)
         {
-            /*if (DateIntervention_TextBox.Text != "" && MontantTTCIntervention_TextBox.Text != "" && InformationIntervention_TextBox.Text != "")
+            if (BienPret_ComboBox.Text != "" && ApportPret_TextBox.Text != "" && MensualitePret_TextBox.Text != "" && DureePret_TextBox.Text != "")
             {
-                string nomBien = BienIntervention_ComboBox.Items.ToString();
-                string date = DateIntervention_TextBox.Text;
-                int montantttc = int.Parse(MontantTTCIntervention_TextBox.Text);
-                string information = InformationIntervention_TextBox.Text;
 
-                Intervention uneIntervention = new Intervention(date, montantttc, information, null);
+                string nomBien = BienPret_ComboBox.Text;
+                int montant = int.Parse(MontantPret_TextBox.Text);
+                int mensualite = int.Parse(MensualitePret_TextBox.Text);
+                int apport = int.Parse(ApportPret_TextBox.Text);
+                string duree = MensualitePret_TextBox.Text;
+                int tauxInteret = int.Parse(DureePret_TextBox.Text);
+
+                Pret unPret = new Pret(nomBien, montant, mensualite, apport, duree, tauxInteret);
                 ImmoContext ctx = ImmoContext.getInstance();
-                ctx.Intervention.Add(uneIntervention);
-                ctx.SaveChanges();*/
+                ctx.Pret.Add(unPret);
+                ctx.SaveChanges();
 
                 this.notifyObservers();
 
-                /*MessageBox.Show("Intervention ajouté avec succès!");
+                MessageBox.Show("Intervention ajouté avec succès!");
             }
             else
             {
                 MessageBox.Show("Un ou plusieurs des champs n'a pas été correctement rempli.");
-            }*/
-
+            }
+            
         }
 
-
+        
     }
 }

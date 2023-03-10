@@ -578,3 +578,9 @@ C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBie
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBien\Forms\ConsulterMaisonForm.baml
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBien\Forms\ConsulterAppartementForm.g.cs
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererBien\Forms\ConsulterAppartementForm.baml
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPret\Forms\ConsulterPret.g.cs
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPret\Forms\ConsulterPret.baml
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererIntervention\Forms\ConsulterIntervention.g.cs
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererIntervention\Forms\ConsulterIntervention.baml
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\Forms\ConsulterPrestataire.g.cs
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\Forms\ConsulterPrestataire.baml

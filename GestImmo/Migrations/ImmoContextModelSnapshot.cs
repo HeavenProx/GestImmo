@@ -185,8 +185,15 @@ namespace GestImmo.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("Mensualite")
+                        .HasColumnType("integer");
+
                     b.Property<int>("Montant")
                         .HasColumnType("integer");
+
+                    b.Property<string>("NomBien")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<int>("TauxInteret")
                         .HasColumnType("integer");

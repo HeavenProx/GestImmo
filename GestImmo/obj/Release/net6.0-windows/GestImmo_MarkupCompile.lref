@@ -24,4 +24,7 @@ FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\InterventionView.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\NavigationView.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\PrestataireView.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\PretView.xaml;;
+FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererPret\Forms\ConsulterPret.xaml;;
+FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererIntervention\Forms\ConsulterIntervention.xaml;;
+FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererPrestataire\Forms\ConsulterPrestataire.xaml;;
 

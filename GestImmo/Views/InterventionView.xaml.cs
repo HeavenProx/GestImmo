@@ -27,14 +27,14 @@ namespace GestImmo.Views
         public InterventionView()
         {
             InitializeComponent();
-            ListInterventionView listInterventionView = new ListInterventionView();
+            ListInterventionView listInterventionView = new ListInterventionView(this.Ajouter_Intervention);
             this.Frame_Consulter_Intervention.Navigate(listInterventionView);
             this.Ajouter_Intervention.Navigate(new GererAjouterInterventionForm());
         }
 
         private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
-            this.Frame_Consulter_Intervention.Navigate(new ListInterventionView());
+            this.Frame_Consulter_Intervention.Navigate(new ListInterventionView(this.Ajouter_Intervention));
         }
     }
 }

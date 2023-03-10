@@ -27,14 +27,14 @@ namespace GestImmo.Views
         public PrestataireView()
         {
             InitializeComponent();
-            ListPrestataireView listPrestataireView = new ListPrestataireView();
+            ListPrestataireView listPrestataireView = new ListPrestataireView(this.Ajouter_Prestataire);
             this.Frame_Consulter_Prestataire.Navigate(listPrestataireView);
             this.Ajouter_Prestataire.Navigate(new GererAjouterPrestataireForm());
         }
 
         private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
-            this.Frame_Consulter_Prestataire.Navigate(new ListPrestataireView());
+            this.Frame_Consulter_Prestataire.Navigate(new ListPrestataireView(this.Ajouter_Prestataire));
         }
     }
 }
