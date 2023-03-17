@@ -68,7 +68,11 @@ namespace GestImmo.Views.GererPrestataire.Forms
                MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 ImmoContext ctx = ImmoContext.getInstance();
-                //ctx.Prestataire.
+                this.prestataire.RaisonSociale = RaisonSocialePrestataire_TextBox.Text;
+                this.prestataire.Nom = NomPrestataire_TextBox.Text;
+                this.prestataire.Prenom = PrenomPrestataire_TextBox.Text;
+                this.prestataire.Telephone = TelephonePrestataire_TextBox.Text;
+                this.prestataire.Adresse = prestataire.Adresse;
                 ctx.SaveChanges();
                 //this.notifyObservers();
 

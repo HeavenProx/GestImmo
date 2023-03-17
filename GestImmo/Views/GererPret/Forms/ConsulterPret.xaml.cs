@@ -63,7 +63,10 @@ namespace GestImmo.Views.GererPret.Forms
                 MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 ImmoContext ctx = ImmoContext.getInstance();
-                //ctx.Pret.
+                this.pret.NomBien = NomBien_TextBox.Text;
+                this.pret.Apport = int.Parse(ApportPret_TextBox.Text);
+                this.pret.Mensualite = int.Parse(MensualitePret_TextBox.Text);
+                this.pret.Duree = DureePret_TextBox.Text;
                 ctx.SaveChanges();
                 //this.notifyObservers();
 

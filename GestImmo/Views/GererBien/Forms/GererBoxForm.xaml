@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:GestImmo.Views.Forms"
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="400"
-      Title="GererBoxForm">
+      Title="GererBoxForm"
+      Background="Bisque">
 
     <Grid Margin="15,15,15,15">
         <Grid.ColumnDefinitions>

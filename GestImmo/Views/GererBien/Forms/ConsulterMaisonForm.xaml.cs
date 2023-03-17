@@ -80,7 +80,26 @@ namespace GestImmo.Views.GererBien.Forms
 
         private void Bouton_Modifier_Bien_Click(object sender, RoutedEventArgs e)
         {
+            if (MessageBox.Show("Etes vous sûr de modifier cette maison ?",
+                "Oui",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                ImmoContext ctx = ImmoContext.getInstance();
+                this.maison.NomBien = NomBien_TextBox.Text;
+                this.maison.Valeur = int.Parse(ValeurBien_TextBox.Text);
+                this.maison.Adresse = AdresseBien_TextBox.Text;
+                this.maison.Surface = int.Parse(SurfaceBien_TextBox.Text);
+                this.maison.NbPiece = int.Parse(PiecesBien_TextBox.Text);
+                this.maison.NbChambre = int.Parse(ChambresBien_TextBox.Text);
+                this.maison.Cave = int.Parse(Cave_TextBox.Text);
+                this.maison.Parking = int.Parse(Parking_TextBox.Text);
 
+                ctx.SaveChanges();
+                //this.notifyObservers();
+
+                MessageBox.Show("La maison " + maison.NomBien + " a été modifié !");
+            }
         }
 
         private void Bouton_Supprimer_Bien_Click(object sender, RoutedEventArgs e)

@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\App.xaml
 27-497556173
 
-50330493417
+52-1198327829
 208-1716459877
 MainWindow.xaml;Views\BienView.xaml;Views\GererBien\Forms\ConsulterAppartementForm.xaml;Views\GererBien\Forms\ConsulterBoxForm.xaml;Views\GererBien\Forms\ConsulterMaisonForm.xaml;Views\GererBien\Forms\GererAppartementForm.xaml;Views\GererBien\Forms\GererBienForm.xaml;Views\GererBien\Forms\GererBoxForm.xaml;Views\GererBien\Forms\GererMaisonForm.xaml;Views\GererBien\SubViews\ListBienView.xaml;Views\GererIntervention\Forms\ConsulterIntervention.xaml;Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml;Views\GererIntervention\Forms\GererInterventionForm.xaml;Views\GererIntervention\SubViews\ListInterventionView.xaml;Views\GererPrestataire\Forms\ConsulterPrestataire.xaml;Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml;Views\GererPrestataire\Forms\GererPrestataireForm.xaml;Views\GererPrestataire\SubViews\ListPrestataireView.xaml;Views\GererPret\Forms\ConsulterPret.xaml;Views\GererPret\Forms\GererAjouterPretForm.xaml;Views\GererPret\Forms\GererPretForm.xaml;Views\GererPret\Subviews\ListPretView.xaml;Views\HomeView.xaml;Views\InterventionView.xaml;Views\NavigationView.xaml;Views\PrestataireView.xaml;Views\PretView.xaml;
 

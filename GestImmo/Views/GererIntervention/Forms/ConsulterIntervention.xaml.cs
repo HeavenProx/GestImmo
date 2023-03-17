@@ -59,11 +59,15 @@ namespace GestImmo.Views.GererIntervention.Forms
                 MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 ImmoContext ctx = ImmoContext.getInstance();
-                //ctx.Intervention.
+                //this.intervention = BienIntervention_ComboBox.Text;
+                //this.PrestataireIntervention_ComboBox = 
+                this.intervention.DateIntervention = DateIntervention_TextBox.Text;
+                this.intervention.MontantTTC = int.Parse(MontantTTCIntervention_TextBox.Text);
+                this.intervention.Information = InformationIntervention_TextBox.Text;
                 ctx.SaveChanges();
                 //this.notifyObservers();
 
-                MessageBox.Show("L'intervention du " + intervention.DateIntervention + " ayant couté " + intervention.MontantTTC + " par  a été modifiée !");
+                MessageBox.Show("L'intervention du " + intervention.DateIntervention + " ayant couté " + intervention.MontantTTC + "€ a été modifiée !");
             }
         }
 

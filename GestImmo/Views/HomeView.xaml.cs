@@ -46,16 +46,24 @@ namespace GestImmo.Views.SubViews
             else { valeurNbPret.Content = nbPret + " prêts au total"; }
 
             int beneficeMensuel = 0;
-            foreach (Pret pret in ctx.Pret)
-            {
-                beneficeMensuel = beneficeMensuel + pret.TauxInteret; 
-            }
             valeurBenefMensuelCum.Content = beneficeMensuel + " €";
 
             int detteMensuel = 0;
+            foreach (Pret pret in ctx.Pret)
+            { 
+                detteMensuel = detteMensuel + pret.Mensualite;
+            }
             valeurDetteMensuelCum.Content = detteMensuel + " €";
 
+            int masseDette = 0;
+            int masseApport = 0;
             int masseTotalDette = 0;
+            foreach (Pret pret in ctx.Pret)
+            { 
+                masseDette = masseDette + pret.Montant;
+                masseApport = masseApport + pret.Apport;
+            }
+            masseTotalDette = masseDette - masseApport;
             valeurMasseTotaleDette.Content = masseTotalDette + " €";
 
             int loyerMensuelCumule = 0;

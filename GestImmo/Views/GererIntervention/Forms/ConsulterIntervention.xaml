@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:GestImmo.Views.GererIntervention.Forms"
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="400"
-      Title="ConsulterIntervention">
+      Title="ConsulterIntervention"
+      Background="PaleTurquoise">
 
     <Grid>
         <Grid Margin="15,10,15,15">

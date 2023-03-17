@@ -30,7 +30,7 @@
             <Label x:Name="Lbl_NomBien" Content="Nom"  Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" />
             <Label x:Name="Lbl_ApportPret" Content="Apport" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
             <Label x:Name="Lbl_MensualitePret" Content="Mensualite"  Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
-            <Label x:Name="Lbl_DureePret" Content="Duree(m2)" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+            <Label x:Name="Lbl_DureePret" Content="Duree (mois)" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
 
             <Button x:Name="Bouton_Modifier_Pret" Content="Modifier" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Click="Bouton_Modifier_Pret_Click" Margin="0,0,145,0" Height="20"/>
             <Button x:Name="Bouton_Supprimer_Pret" Content="Supprimer" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Click="Bouton_Supprimer_Pret_Click" Margin="146,0,0,0" Height="20"/>

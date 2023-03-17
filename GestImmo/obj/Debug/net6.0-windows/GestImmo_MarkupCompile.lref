@@ -14,6 +14,7 @@ FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererIntervention\Forms\Consulte
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererIntervention\Forms\GererAjouterInterventionForm.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererIntervention\Forms\GererInterventionForm.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererIntervention\SubViews\ListInterventionView.xaml;;
+FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererPrestataire\Forms\ConsulterPrestataire.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererPrestataire\Forms\GererAjouterPrestataireForm.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererPrestataire\Forms\GererPrestataireForm.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererPrestataire\SubViews\ListPrestataireView.xaml;;
@@ -26,5 +27,4 @@ FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\InterventionView.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\NavigationView.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\PrestataireView.xaml;;
 FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\PretView.xaml;;
-FC:\xampp\xammp\htdocs\GitHub\C#\GestImmo\Views\GererPrestataire\Forms\ConsulterPrestataire.xaml;;
 

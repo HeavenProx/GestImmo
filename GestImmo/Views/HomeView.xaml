@@ -6,23 +6,25 @@
       xmlns:local="clr-namespace:GestImmo.Views.SubViews"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="HomeView">
+      Title="HomeView"
+      Background="BurlyWood">
 
     <Grid>
         <Label Content="Tableau de bord" FontSize="22px" Margin="312,42,277,372"/>
         <Label Content="Nombre de bien" FontSize="18px" Margin="52,170,586,249"/>
         <Label Content="Bénéfice mensuel cumulé" FontSize="18px" Margin="294,170,256,249"/>
-        <Label Content="Masse totale dette" FontSize="18px" Margin="600,172,16,247"/>
+        <Label Content="Masse totale dette" FontSize="18px" Margin="584,172,32,247"/>
         <Label Content="Nombre de prêt" FontSize="18px" Margin="52,350,571,69"/>
-        <Label Content="Dette mensuel cumulé" FontSize="18px" Margin="308,350,277,69"/>
-        <Label Content="Loyer mensuel cumulé" FontSize="18px" Margin="572,350,10,69"/>
+        <Label Content="Dette mensuel cumulé" FontSize="18px" Margin="302,350,283,69"/>
+        <Label Content="Loyer mensuel cumulé" FontSize="18px" Margin="582,350,0,69"/>
 
         <Label x:Name="valeurNbBien" Content="" FontSize="16px" Margin="57,198,587,220"/>
         <Label x:Name="valeurNbPret" Content="" FontSize="16px" Margin="60,377,603,41"/>
-        <Label x:Name="valeurBenefMensuelCum" Content="" FontSize="16px" Margin="315,377,348,41"/>
-        <Label x:Name="valeurDetteMensuelCum" Content="" FontSize="16px" Margin="319,198,322,220"/>
+        <Label x:Name="valeurBenefMensuelCum" Content="" FontSize="16px" Margin="380,198,283,220"/>
+        <Label x:Name="valeurDetteMensuelCum" Content="" FontSize="16px" Margin="364,376,352,48"/>
         <Label x:Name="valeurMasseTotaleDette" Content="" FontSize="16px" Margin="621,199,42,219"/>
-        <Label x:Name="valeurLoyerMensuelCumule" Content="" FontSize="16px" Margin="621,377,42,41"/>
+        <Label x:Name="valeurLoyerMensuelCumule" Content="" FontSize="16px" Margin="647,377,16,41"/>
+        
 
     </Grid>
 </Page>

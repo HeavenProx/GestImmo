@@ -99,7 +99,29 @@ namespace GestImmo.Views.GererBien.Forms
 
         private void Bouton_Modifier_Bien_Click(object sender, RoutedEventArgs e)
         {
+            if (MessageBox.Show("Etes vous sûr de modifier cet appartement ?",
+                "Oui",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                ImmoContext ctx = ImmoContext.getInstance();
+                this.appartement.NomBien = NomBien_TextBox.Text;
+                this.appartement.Valeur = int.Parse(ValeurBien_TextBox.Text);
+                this.appartement.Adresse = AdresseBien_TextBox.Text;
+                this.appartement.Surface = int.Parse(SurfaceBien_TextBox.Text);
+                this.appartement.NbPiece = int.Parse(PiecesBien_TextBox.Text);
+                this.appartement.NbChambre = int.Parse(ChambresBien_TextBox.Text);
+                this.appartement.Etage = int.Parse(Etage_Textbox.Text);
+                this.appartement.Ascenseur = Ascenseur_TextBox.Text;
+                this.appartement.Chauffage = Chauffage_TextBox.Text;
+                this.appartement.Cave = int.Parse(Cave_TextBox.Text);
+                this.appartement.Parking = int.Parse(Parking_TextBox.Text);
 
+                ctx.SaveChanges();
+                //this.notifyObservers();
+
+                MessageBox.Show("L'appartement " + appartement.NomBien + " a été modifié !");
+            }
         }
 
         private void Bouton_Supprimer_Bien_Click(object sender, RoutedEventArgs e)

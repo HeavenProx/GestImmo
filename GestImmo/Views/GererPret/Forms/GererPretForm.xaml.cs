@@ -76,7 +76,7 @@ namespace GestImmo.Views.GererPret.Forms
                 int montant = int.Parse(MontantPret_TextBox.Text);
                 int mensualite = int.Parse(MensualitePret_TextBox.Text);
                 int apport = int.Parse(ApportPret_TextBox.Text);
-                string duree = MensualitePret_TextBox.Text;
+                string duree = DureePret_TextBox.Text;
                 int tauxInteret = int.Parse(DureePret_TextBox.Text);
 
                 Pret unPret = new Pret(nomBien, montant, mensualite, apport, duree, tauxInteret);
