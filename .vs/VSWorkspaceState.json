@@ -5,13 +5,12 @@
     "\\GestImmo\\Data",
     "\\GestImmo\\Data\\DAO",
     "\\GestImmo\\Views",
-    "\\GestImmo\\Views\\GererBien",
-    "\\GestImmo\\Views\\GererBien\\SubViews",
     "\\GestImmo\\Views\\GererIntervention",
     "\\GestImmo\\Views\\GererIntervention\\Forms",
+    "\\GestImmo\\Views\\GererIntervention\\SubViews",
     "\\GestImmo\\Views\\GererPret",
     "\\GestImmo\\Views\\GererPret\\Forms"
   ],
-  "SelectedNode": "\\GestImmo\\Views\\GererBien\\Forms\\ConsulterBoxForm.xaml.cs",
+  "SelectedNode": "\\GestImmo\\Views\\GererPret\\Forms\\GererAjouterPretForm.xaml",
   "PreviewInSolutionExplorer": false
 }

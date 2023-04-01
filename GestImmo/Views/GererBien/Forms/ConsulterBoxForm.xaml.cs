@@ -36,9 +36,7 @@ namespace GestImmo.Views.GererBien.Forms
             this.NomBien_TextBox.Text = bien.NomBien;
             this.ValeurBien_TextBox.Text = bien.Valeur.ToString();
             this.AdresseBien_TextBox.Text = bien.Adresse;
-            this.SurfaceBien_TextBox.Text = bien.Surface.ToString();
-
-            
+            this.SurfaceBien_TextBox.Text = bien.Surface.ToString();      
         }
 
         private void NomBien_TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -73,13 +71,10 @@ namespace GestImmo.Views.GererBien.Forms
                 this.bien.Valeur = int.Parse(ValeurBien_TextBox.Text);
                 this.bien.Adresse = AdresseBien_TextBox.Text;
                 this.bien.Surface = int.Parse(SurfaceBien_TextBox.Text);
-
                 ctx.SaveChanges();
-                //this.notifyObservers();
 
                 MessageBox.Show("La box " + bien.NomBien + " a été modifié !");
             }
-
         }
 
         private void Bouton_Supprimer_Bien_Click(object sender, RoutedEventArgs e)

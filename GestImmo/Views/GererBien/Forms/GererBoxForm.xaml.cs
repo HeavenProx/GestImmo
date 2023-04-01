@@ -41,16 +41,13 @@ namespace GestImmo.Views.Forms
                 string adresse = AdresseBien_TextBox.Text;
                 int surface = int.Parse(SurfaceBien_TextBox.Text);
 
-
                 Box unBox = new Box(nom, valeur, surface, adresse, null, null, null);
                 ImmoContext ctx = ImmoContext.getInstance();
                 ctx.Bien.Add(unBox);
                 ctx.SaveChanges();
 
                 this.notifyObservers();
-
                 MessageBox.Show("Ajouté avec succès!");
-
             }
             else
             {

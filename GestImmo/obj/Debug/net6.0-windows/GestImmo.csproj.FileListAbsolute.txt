@@ -584,3 +584,4 @@ C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererInt
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererIntervention\Forms\ConsulterIntervention.baml
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\Forms\ConsulterPrestataire.g.cs
 C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\obj\Debug\net6.0-windows\Views\GererPrestataire\Forms\ConsulterPrestataire.baml
+C:\xampp\xammp\htdocs\GitHub\C#\GestImmo\bin\Debug\net6.0-windows\GestImmo.dll.config

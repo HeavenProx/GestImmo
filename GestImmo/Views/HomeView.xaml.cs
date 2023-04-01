@@ -57,7 +57,7 @@ namespace GestImmo.Views.SubViews
 
             int masseDette = 0;
             int masseApport = 0;
-            int masseTotalDette = 0;
+            int masseTotalDette;
             foreach (Pret pret in ctx.Pret)
             { 
                 masseDette = masseDette + pret.Montant;

@@ -24,31 +24,30 @@ namespace GestImmo.Views
         public NavigationView()
         {
             InitializeComponent();
-            this.MainFrame.Navigate(new HomeView());
-            
+            this.MainFrame.Navigate(new HomeView());       
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_Bien(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(new BienView());
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_Pret(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(new PretView());
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click_Intervention(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(new InterventionView());
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void Button_Click_Prestataire(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(new PrestataireView());
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void Button_Click_Accueil(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(new HomeView());
         }

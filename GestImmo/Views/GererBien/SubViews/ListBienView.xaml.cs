@@ -38,11 +38,8 @@ namespace GestImmo.Views.SubViews
 
         private void updateList()
         {
-            
             ImmoContext ctx = ImmoContext.getInstance();
-
             this.ListBienView_Section.Items.Clear();
-
             foreach (Bien bien in ctx.Bien)
             {
                     this.ListBienView_Section.Items.Add(bien);
@@ -80,12 +77,5 @@ namespace GestImmo.Views.SubViews
                 }
             }
         }
-
-        /*public void chargerViewParId(int id)
-        {
-            ImmoContext ctx = ImmoContext.getInstance();
-            bool place = false;
-            Bien bien = ctx.Bien.Find(id);
-        }*/
     }
 }

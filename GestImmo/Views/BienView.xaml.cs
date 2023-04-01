@@ -30,12 +30,10 @@ namespace GestImmo.Views
             InitializeComponent();
             ListBienView listBienView = new ListBienView(this.Ajouter_Bien);
             this.Frame_Consulter_Bien.Navigate(listBienView);
+
             this.Ajouter_Bien.Navigate(new GererBienForm(listBienView));
         }
-        private void Frame_Navigated(object sender, NavigationEventArgs e)
-        {
-            this.Frame_Consulter_Bien.Navigate(new ListBienView(this.Ajouter_Bien));
-        }
+        
 
         private void Ajouter_Bien_Navigated(object sender, NavigationEventArgs e)
         {

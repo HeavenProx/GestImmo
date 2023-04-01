@@ -29,9 +29,6 @@ namespace GestImmo
         {            
             InitializeComponent();
             this.Content = new NavigationView();
-
-            ImmoContext ImmoContext = new ImmoContext();
-            ImmoContext ctx = ImmoContext.getInstance();
         }
     }
 }
