@@ -26,7 +26,7 @@ namespace GestImmo.Models
         public int Age { get => age; set => age = value; }
         public string Profession { get => profession; set => profession = value; }
 
-        public Locataire ajouterLocataire()
+        /*public Locataire ajouterLocataire()
         {
             Console.WriteLine("Saisir le nom du locataire:\r");
             string nom = Console.ReadLine();
@@ -44,6 +44,6 @@ namespace GestImmo.Models
         public void afficher()
         {
             Console.WriteLine("Locataire:" + nom + " " + prenom);
-        }
+        }*/
     }
 }

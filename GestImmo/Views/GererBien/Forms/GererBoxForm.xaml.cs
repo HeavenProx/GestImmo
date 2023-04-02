@@ -28,7 +28,6 @@ namespace GestImmo.Views.Forms
         {
             InitializeComponent();
             this.Observers = new List<IObserver>();
-            
         }        
 
         private void Bouton_Ajouter_Bien_Click(object sender, RoutedEventArgs e)
@@ -57,7 +56,6 @@ namespace GestImmo.Views.Forms
 
         void notifyObservers()
         {
-           
             foreach(IObserver obs in Observers)
             {
                 obs.update();

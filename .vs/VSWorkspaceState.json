@@ -3,7 +3,7 @@
     "",
     "\\GestImmo",
     "\\GestImmo\\Data",
-    "\\GestImmo\\Data\\DAO",
+    "\\GestImmo\\Data\\DAL",
     "\\GestImmo\\Views",
     "\\GestImmo\\Views\\GererIntervention",
     "\\GestImmo\\Views\\GererIntervention\\Forms",
@@ -11,6 +11,6 @@
     "\\GestImmo\\Views\\GererPret",
     "\\GestImmo\\Views\\GererPret\\Forms"
   ],
-  "SelectedNode": "\\GestImmo\\Views\\GererPret\\Forms\\GererAjouterPretForm.xaml",
+  "SelectedNode": "\\GestImmo\\Data\\DAL\\ImmoContext.cs",
   "PreviewInSolutionExplorer": false
 }

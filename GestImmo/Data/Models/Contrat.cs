@@ -12,8 +12,6 @@ namespace GestImmo.Models
         private int coutLoyer;
         private string dateDebut;
         private string dateFin;
-        //private List<Locataire> listeLocataire = new List<Locataire>();
-        //List<Locataire> listeLocataire
 
         public Contrat(int coutLoyer, string dateDebut, string dateFin)
         {
@@ -28,14 +26,14 @@ namespace GestImmo.Models
         public string DateFin { get => dateFin; set => dateFin = value; }
         //internal List<Locataire> ListeLocataire { get => listeLocataire; set => listeLocataire = value; }
 
-        public void afficher()
+        /*public void afficher()
         {
             Console.WriteLine("====Bail======");
             Console.WriteLine("Loyer:" + coutLoyer);
-            /*foreach (Locataire item in listeLocataire)
+            foreach (Locataire item in listeLocataire)
             {
                 item.afficher();
-            }*/
-        }
+            }
+        }*/
     }
 }

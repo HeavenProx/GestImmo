@@ -33,14 +33,12 @@ namespace GestImmo.Data.DAL
         }
 
         private static ImmoContext? instance;
-
         public static ImmoContext getInstance()
         {
             if (instance == null)
             {
                 instance = new ImmoContext();
             }
-
             return instance;
         }
 
